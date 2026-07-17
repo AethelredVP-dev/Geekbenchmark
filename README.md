@@ -1,18 +1,36 @@
-# React + Vite
+# 🚀 Geekbenchmark
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive web application built to analyze, Benchmark, and display hardware system specifications. This project is designed for tech enthusiasts and gamers to quickly evaluate their components and view benchmark data in a clean, interactive user interface.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Tech Stack & Tools
 
-## React Compiler
+* **Frontend Framework:** React (with functional components and Hooks)
+* **UI Library:** Material UI (MUI) & React Icons
+* **Form Management:** Formik & Yup (for robust client-side validation)
+* **State Management:** React Context API
+* **Backend / API:** MockAPI (for dynamic, cloud-based mock data hosting)
+* **HTTP Client:** Axios (for fetching remote hardware lists)
+* **Deployment & Hosting:** Netlify
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
+## 💻 Supported Hardware Categories
 
-## Expanding the ESLint configuration
+The application dynamically pulls up-to-date hardware information directly from a secure MockAPI cloud database, including:
+* **Processor (CPU):** High-end architectures (e.g., Intel Core i7-13650HX)
+* **Graphics Card (GPU):** Modern gaming GPUs (e.g., NVIDIA GeForce RTX 4050 Laptop)
+* **Memory (RAM):** High-performance modules (e.g., 24GB DDR5)
+* **Display:** Gaming monitors (e.g., 1080p 144Hz displays)
+* **Motherboards & Storage:** Fast NVMe SSD configurations
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📦 Installation & Setup
+
+To run this project locally, follow these steps:
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/AethelredVP-dev/Geekbenchmark.git](https://github.com/AethelredVP-dev/Geekbenchmark.git)
