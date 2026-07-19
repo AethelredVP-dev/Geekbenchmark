@@ -11,4 +11,10 @@ export const context = createContext({
   setReport: () => {},
   loading: false,
   setLoading: () => {},
+  Tiers: [
+    { value: "low", label: "Low" },
+    { value: "medium", label: "Medium" },
+    { value: "high", label: "High" },
+    { value: "ultra", label: "Ultra" },
+  ],
 });

@@ -23,6 +23,7 @@ const Specs = () => {
     const { specs, setSpecs, setLoading } = useContext(context)
     const navigate = useNavigate()
     useEffect(() => {
+
         const URL = "https://6a5a5e97ad8332e75f027284.mockapi.io/api/v1/all/1";
 
         const fetchData = async (url) => {
@@ -57,8 +58,7 @@ const Specs = () => {
     };
 
     const handleSubmit = (values) => {
-        clearTimeout()
-        const selectedSpecs = {
+        const userSelection = {
             cpu: specs.cpu?.find(item => item.id === values.cpu) || null,
             gpu: specs.gpu?.find(item => item.id === values.gpu) || null,
             ram: specs.ram?.find(item => item.id === values.ram) || null,
@@ -67,9 +67,8 @@ const Specs = () => {
             'Disk-Space': specs['Disk-Space']?.find(item => item.id === values['Disk-Space']) || null,
         };
 
-        setSpecs(selectedSpecs);
         setLoading(true)
-        navigate("/benchmark")
+        navigate("/benchmark", { state: { userSelection } })
     };
     return (
         <Container sx={{ py: 4 }}>

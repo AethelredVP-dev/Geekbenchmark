@@ -7,12 +7,11 @@
 // GPU and CPU dominate real-world "system power", storage/RAM matter less,
 // monitor/motherboard barely move the needle on raw performance.
 const WEIGHTS = {
-  cpu: 0.3,
-  gpu: 0.35,
+  cpu: 0.35,
+  gpu: 0.4,
   ram: 0.1,
-  "Disk-Space": 0.12,
   motherboard: 0.05,
-  monitor: 0.08,
+  monitor: 0.1,
 };
 
 // ---- 2. Socket / chipset generation extraction (parsed from title text) ----
@@ -68,6 +67,11 @@ function getMotherboardRamType(title = "") {
 function getRamType(title = "") {
   const match = title.match(/DDR\d/);
   return match ? match[0] : "Unknown";
+}
+
+function getMonitorResolution(title = "") {
+  const match = title.match(/(\d{3,4}p)/);
+  return match ? match[1] : "Unknown";
 }
 
 // ---- 3. Compatibility check ----

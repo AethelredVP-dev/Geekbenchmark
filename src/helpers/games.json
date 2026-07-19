@@ -5,26 +5,26 @@
         "genre": "Competitive FPS",
         "cpuWeight": 0.55,
         "gpuWeight": 0.35,
-        "ramWeight": 0.10,
+        "ramWeight": 0.1,
         "baselineFps": {
-            "low": 400,
-            "medium": 300,
-            "high": 220,
-            "ultra": 165
+            "low": 850,
+            "medium": 620,
+            "high": 450,
+            "ultra": 360
         }
     },
     {
         "id": "game-2",
         "title": "Valorant",
         "genre": "Competitive FPS",
-        "cpuWeight": 0.60,
-        "gpuWeight": 0.30,
-        "ramWeight": 0.10,
+        "cpuWeight": 0.6,
+        "gpuWeight": 0.3,
+        "ramWeight": 0.1,
         "baselineFps": {
-            "low": 450,
-            "medium": 350,
-            "high": 280,
-            "ultra": 220
+            "low": 915,
+            "medium": 730,
+            "high": 550,
+            "ultra": 420
         }
     },
     {
@@ -32,27 +32,27 @@
         "title": "League of Legends",
         "genre": "MOBA",
         "cpuWeight": 0.55,
-        "gpuWeight": 0.30,
+        "gpuWeight": 0.3,
         "ramWeight": 0.15,
         "baselineFps": {
-            "low": 400,
-            "medium": 300,
-            "high": 240,
-            "ultra": 180
+            "low": 650,
+            "medium": 480,
+            "high": 370,
+            "ultra": 290
         }
     },
     {
         "id": "game-4",
         "title": "Fortnite",
         "genre": "Battle Royale",
-        "cpuWeight": 0.40,
+        "cpuWeight": 0.4,
         "gpuWeight": 0.45,
         "ramWeight": 0.15,
         "baselineFps": {
-            "low": 240,
-            "medium": 165,
-            "high": 110,
-            "ultra": 75
+            "low": 700,
+            "medium": 350,
+            "high": 270,
+            "ultra": 150
         }
     },
     {
@@ -60,55 +60,55 @@
         "title": "Apex Legends",
         "genre": "Battle Royale",
         "cpuWeight": 0.35,
-        "gpuWeight": 0.50,
+        "gpuWeight": 0.5,
         "ramWeight": 0.15,
         "baselineFps": {
-            "low": 220,
-            "medium": 150,
-            "high": 100,
-            "ultra": 70
+            "low": 300,
+            "medium": 250,
+            "high": 180,
+            "ultra": 130
         }
     },
     {
         "id": "game-6",
         "title": "Call of Duty: Warzone",
         "genre": "Battle Royale",
-        "cpuWeight": 0.30,
+        "cpuWeight": 0.3,
         "gpuWeight": 0.55,
         "ramWeight": 0.15,
         "baselineFps": {
-            "low": 180,
-            "medium": 120,
-            "high": 85,
-            "ultra": 55
+            "low": 360,
+            "medium": 290,
+            "high": 270,
+            "ultra": 250
         }
     },
     {
         "id": "game-7",
         "title": "Cyberpunk 2077",
         "genre": "Open World RPG",
-        "cpuWeight": 0.20,
-        "gpuWeight": 0.70,
-        "ramWeight": 0.10,
+        "cpuWeight": 0.2,
+        "gpuWeight": 0.7,
+        "ramWeight": 0.1,
         "baselineFps": {
-            "low": 140,
-            "medium": 95,
-            "high": 60,
-            "ultra": 30
+            "low": 260,
+            "medium": 200,
+            "high": 150,
+            "ultra": 100
         }
     },
     {
         "id": "game-8",
         "title": "Red Dead Redemption 2",
         "genre": "Open World RPG",
-        "cpuWeight": 0.20,
+        "cpuWeight": 0.2,
         "gpuWeight": 0.68,
         "ramWeight": 0.12,
         "baselineFps": {
-            "low": 130,
-            "medium": 90,
-            "high": 58,
-            "ultra": 32
+            "low": 200,
+            "medium": 160,
+            "high": 130,
+            "ultra": 115
         }
     },
     {
@@ -117,26 +117,26 @@
         "genre": "Open World RPG",
         "cpuWeight": 0.22,
         "gpuWeight": 0.68,
-        "ramWeight": 0.10,
+        "ramWeight": 0.1,
         "baselineFps": {
-            "low": 150,
-            "medium": 105,
-            "high": 70,
-            "ultra": 40
+            "low": 200,
+            "medium": 160,
+            "high": 130,
+            "ultra": 115
         }
     },
     {
         "id": "game-10",
         "title": "Elden Ring",
         "genre": "Action RPG",
-        "cpuWeight": 0.30,
-        "gpuWeight": 0.60,
-        "ramWeight": 0.10,
+        "cpuWeight": 0.3,
+        "gpuWeight": 0.6,
+        "ramWeight": 0.1,
         "baselineFps": {
-            "low": 120,
-            "medium": 90,
-            "high": 65,
-            "ultra": 45
+            "low": 220,
+            "medium": 180,
+            "high": 150,
+            "ultra": 115
         }
     },
     {
@@ -144,13 +144,13 @@
         "title": "Grand Theft Auto V",
         "genre": "Open World",
         "cpuWeight": 0.25,
-        "gpuWeight": 0.60,
+        "gpuWeight": 0.6,
         "ramWeight": 0.15,
         "baselineFps": {
-            "low": 220,
+            "low": 200,
             "medium": 160,
-            "high": 110,
-            "ultra": 70
+            "high": 130,
+            "ultra": 115
         }
     },
     {
@@ -159,26 +159,26 @@
         "genre": "RPG",
         "cpuWeight": 0.35,
         "gpuWeight": 0.55,
-        "ramWeight": 0.10,
+        "ramWeight": 0.1,
         "baselineFps": {
-            "low": 130,
-            "medium": 95,
-            "high": 65,
-            "ultra": 40
+            "low": 190,
+            "medium": 150,
+            "high": 135,
+            "ultra": 100
         }
     },
     {
         "id": "game-13",
         "title": "Civilization VI",
         "genre": "Strategy",
-        "cpuWeight": 0.60,
+        "cpuWeight": 0.6,
         "gpuWeight": 0.25,
         "ramWeight": 0.15,
         "baselineFps": {
-            "low": 200,
-            "medium": 150,
-            "high": 110,
-            "ultra": 80
+            "low": 574,
+            "medium": 430,
+            "high": 316,
+            "ultra": 230
         }
     },
     {
@@ -187,40 +187,40 @@
         "genre": "Strategy",
         "cpuWeight": 0.55,
         "gpuWeight": 0.35,
-        "ramWeight": 0.10,
+        "ramWeight": 0.1,
         "baselineFps": {
-            "low": 140,
-            "medium": 100,
-            "high": 70,
-            "ultra": 45
+            "low": 340,
+            "medium": 250,
+            "high": 180,
+            "ultra": 129
         }
     },
     {
         "id": "game-15",
         "title": "Microsoft Flight Simulator",
         "genre": "Simulation",
-        "cpuWeight": 0.35,
-        "gpuWeight": 0.55,
-        "ramWeight": 0.10,
+        "cpuWeight": 0.45,
+        "gpuWeight": 0.45,
+        "ramWeight": 0.1,
         "baselineFps": {
-            "low": 80,
-            "medium": 60,
-            "high": 42,
-            "ultra": 25
+            "low": 310,
+            "medium": 230,
+            "high": 165,
+            "ultra": 98
         }
     },
     {
         "id": "game-16",
         "title": "Forza Horizon 5",
         "genre": "Racing",
-        "cpuWeight": 0.20,
+        "cpuWeight": 0.2,
         "gpuWeight": 0.68,
         "ramWeight": 0.12,
         "baselineFps": {
-            "low": 180,
-            "medium": 130,
-            "high": 95,
-            "ultra": 60
+            "low": 380,
+            "medium": 280,
+            "high": 205,
+            "ultra": 144
         }
     },
     {
@@ -228,13 +228,13 @@
         "title": "Minecraft (Vanilla)",
         "genre": "Sandbox",
         "cpuWeight": 0.65,
-        "gpuWeight": 0.20,
+        "gpuWeight": 0.2,
         "ramWeight": 0.15,
         "baselineFps": {
-            "low": 400,
-            "medium": 300,
-            "high": 220,
-            "ultra": 150
+            "low": 1200,
+            "medium": 900,
+            "high": 660,
+            "ultra": 450
         }
     },
     {
@@ -242,27 +242,27 @@
         "title": "Overwatch 2",
         "genre": "Competitive FPS",
         "cpuWeight": 0.35,
-        "gpuWeight": 0.50,
+        "gpuWeight": 0.5,
         "ramWeight": 0.15,
         "baselineFps": {
-            "low": 300,
-            "medium": 220,
-            "high": 165,
-            "ultra": 110
+            "low": 1100,
+            "medium": 950,
+            "high": 820,
+            "ultra": 723
         }
     },
     {
         "id": "game-19",
         "title": "Starfield",
         "genre": "Open World RPG",
-        "cpuWeight": 0.30,
-        "gpuWeight": 0.60,
-        "ramWeight": 0.10,
+        "cpuWeight": 0.3,
+        "gpuWeight": 0.6,
+        "ramWeight": 0.1,
         "baselineFps": {
-            "low": 110,
-            "medium": 80,
-            "high": 55,
-            "ultra": 35
+            "low": 300,
+            "medium": 214,
+            "high": 150,
+            "ultra": 107
         }
     },
     {
@@ -271,12 +271,2714 @@
         "genre": "Open World RPG",
         "cpuWeight": 0.22,
         "gpuWeight": 0.68,
-        "ramWeight": 0.10,
+        "ramWeight": 0.1,
         "baselineFps": {
-            "low": 130,
-            "medium": 95,
-            "high": 62,
-            "ultra": 35
+            "low": 260,
+            "medium": 210,
+            "high": 185,
+            "ultra": 161
+        }
+    },
+    {
+        "id": "game-21",
+        "title": "Rainbow Six Siege",
+        "genre": "Competitive Fps",
+        "cpuWeight": 0.55,
+        "gpuWeight": 0.35,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 1890,
+            "medium": 1420,
+            "high": 1040,
+            "ultra": 780
+        }
+    },
+    {
+        "id": "game-22",
+        "title": "Team Fortress 2",
+        "genre": "Competitive Fps",
+        "cpuWeight": 0.55,
+        "gpuWeight": 0.35,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 2050,
+            "medium": 1535,
+            "high": 1125,
+            "ultra": 845
+        }
+    },
+    {
+        "id": "game-23",
+        "title": "Quake Champions",
+        "genre": "Competitive Fps",
+        "cpuWeight": 0.55,
+        "gpuWeight": 0.35,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 1905,
+            "medium": 1430,
+            "high": 1050,
+            "ultra": 785
+        }
+    },
+    {
+        "id": "game-24",
+        "title": "The Finals",
+        "genre": "Competitive Fps",
+        "cpuWeight": 0.55,
+        "gpuWeight": 0.35,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 2030,
+            "medium": 1520,
+            "high": 1115,
+            "ultra": 835
+        }
+    },
+    {
+        "id": "game-25",
+        "title": "XDefiant",
+        "genre": "Competitive Fps",
+        "cpuWeight": 0.55,
+        "gpuWeight": 0.35,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 2070,
+            "medium": 1555,
+            "high": 1140,
+            "ultra": 855
+        }
+    },
+    {
+        "id": "game-26",
+        "title": "Splitgate",
+        "genre": "Competitive Fps",
+        "cpuWeight": 0.55,
+        "gpuWeight": 0.35,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 1930,
+            "medium": 1450,
+            "high": 1060,
+            "ultra": 795
+        }
+    },
+    {
+        "id": "game-27",
+        "title": "Halo Infinite",
+        "genre": "Competitive Fps",
+        "cpuWeight": 0.55,
+        "gpuWeight": 0.35,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 1895,
+            "medium": 1420,
+            "high": 1040,
+            "ultra": 780
+        }
+    },
+    {
+        "id": "game-28",
+        "title": "Battlefield 2042",
+        "genre": "Competitive Fps",
+        "cpuWeight": 0.55,
+        "gpuWeight": 0.35,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 1940,
+            "medium": 1455,
+            "high": 1065,
+            "ultra": 800
+        }
+    },
+    {
+        "id": "game-29",
+        "title": "Escape from Tarkov",
+        "genre": "Competitive Fps",
+        "cpuWeight": 0.55,
+        "gpuWeight": 0.35,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 2000,
+            "medium": 1500,
+            "high": 1100,
+            "ultra": 825
+        }
+    },
+    {
+        "id": "game-30",
+        "title": "Destiny 2",
+        "genre": "Competitive Fps",
+        "cpuWeight": 0.55,
+        "gpuWeight": 0.35,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 1995,
+            "medium": 1495,
+            "high": 1100,
+            "ultra": 825
+        }
+    },
+    {
+        "id": "game-31",
+        "title": "Titanfall 2",
+        "genre": "Competitive Fps",
+        "cpuWeight": 0.55,
+        "gpuWeight": 0.35,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 2105,
+            "medium": 1580,
+            "high": 1160,
+            "ultra": 870
+        }
+    },
+    {
+        "id": "game-32",
+        "title": "Left 4 Dead 2",
+        "genre": "Competitive Fps",
+        "cpuWeight": 0.55,
+        "gpuWeight": 0.35,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 2135,
+            "medium": 1600,
+            "high": 1175,
+            "ultra": 880
+        }
+    },
+    {
+        "id": "game-33",
+        "title": "Payday 3",
+        "genre": "Competitive Fps",
+        "cpuWeight": 0.55,
+        "gpuWeight": 0.35,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 2120,
+            "medium": 1590,
+            "high": 1165,
+            "ultra": 875
+        }
+    },
+    {
+        "id": "game-34",
+        "title": "Insurgency: Sandstorm",
+        "genre": "Competitive Fps",
+        "cpuWeight": 0.55,
+        "gpuWeight": 0.35,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 1870,
+            "medium": 1400,
+            "high": 1030,
+            "ultra": 770
+        }
+    },
+    {
+        "id": "game-35",
+        "title": "Squad",
+        "genre": "Competitive Fps",
+        "cpuWeight": 0.55,
+        "gpuWeight": 0.35,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 2125,
+            "medium": 1590,
+            "high": 1170,
+            "ultra": 875
+        }
+    },
+    {
+        "id": "game-36",
+        "title": "Hell Let Loose",
+        "genre": "Competitive Fps",
+        "cpuWeight": 0.55,
+        "gpuWeight": 0.35,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 2060,
+            "medium": 1545,
+            "high": 1130,
+            "ultra": 850
+        }
+    },
+    {
+        "id": "game-37",
+        "title": "Battlefield 1",
+        "genre": "Competitive Fps",
+        "cpuWeight": 0.55,
+        "gpuWeight": 0.35,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 2065,
+            "medium": 1550,
+            "high": 1135,
+            "ultra": 850
+        }
+    },
+    {
+        "id": "game-38",
+        "title": "Battlefield V",
+        "genre": "Competitive Fps",
+        "cpuWeight": 0.55,
+        "gpuWeight": 0.35,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 1980,
+            "medium": 1485,
+            "high": 1090,
+            "ultra": 815
+        }
+    },
+    {
+        "id": "game-39",
+        "title": "Call of Duty: Modern Warfare III",
+        "genre": "Competitive Fps",
+        "cpuWeight": 0.55,
+        "gpuWeight": 0.35,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 2045,
+            "medium": 1535,
+            "high": 1125,
+            "ultra": 845
+        }
+    },
+    {
+        "id": "game-40",
+        "title": "Call of Duty: Black Ops 6",
+        "genre": "Competitive Fps",
+        "cpuWeight": 0.55,
+        "gpuWeight": 0.35,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 2015,
+            "medium": 1510,
+            "high": 1110,
+            "ultra": 830
+        }
+    },
+    {
+        "id": "game-41",
+        "title": "PUBG: Battlegrounds",
+        "genre": "Battle Royale",
+        "cpuWeight": 0.35,
+        "gpuWeight": 0.5,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 364,
+            "medium": 248,
+            "high": 165,
+            "ultra": 116
+        }
+    },
+    {
+        "id": "game-42",
+        "title": "Fall Guys",
+        "genre": "Battle Royale",
+        "cpuWeight": 0.35,
+        "gpuWeight": 0.5,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 350,
+            "medium": 238,
+            "high": 160,
+            "ultra": 110
+        }
+    },
+    {
+        "id": "game-43",
+        "title": "Naraka: Bladepoint",
+        "genre": "Battle Royale",
+        "cpuWeight": 0.35,
+        "gpuWeight": 0.5,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 381,
+            "medium": 258,
+            "high": 173,
+            "ultra": 121
+        }
+    },
+    {
+        "id": "game-44",
+        "title": "Realm Royale",
+        "genre": "Battle Royale",
+        "cpuWeight": 0.35,
+        "gpuWeight": 0.5,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 371,
+            "medium": 253,
+            "high": 168,
+            "ultra": 117
+        }
+    },
+    {
+        "id": "game-45",
+        "title": "Super People",
+        "genre": "Battle Royale",
+        "cpuWeight": 0.35,
+        "gpuWeight": 0.5,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 398,
+            "medium": 272,
+            "high": 180,
+            "ultra": 126
+        }
+    },
+    {
+        "id": "game-46",
+        "title": "Dota 2",
+        "genre": "Moba",
+        "cpuWeight": 0.55,
+        "gpuWeight": 0.3,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 2075,
+            "medium": 1560,
+            "high": 1245,
+            "ultra": 935
+        }
+    },
+    {
+        "id": "game-47",
+        "title": "Smite",
+        "genre": "Moba",
+        "cpuWeight": 0.55,
+        "gpuWeight": 0.3,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 1945,
+            "medium": 1460,
+            "high": 1165,
+            "ultra": 875
+        }
+    },
+    {
+        "id": "game-48",
+        "title": "Heroes of the Storm",
+        "genre": "Moba",
+        "cpuWeight": 0.55,
+        "gpuWeight": 0.3,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 1965,
+            "medium": 1475,
+            "high": 1180,
+            "ultra": 885
+        }
+    },
+    {
+        "id": "game-49",
+        "title": "Pokemon Unite",
+        "genre": "Moba",
+        "cpuWeight": 0.55,
+        "gpuWeight": 0.3,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 1845,
+            "medium": 1385,
+            "high": 1110,
+            "ultra": 830
+        }
+    },
+    {
+        "id": "game-50",
+        "title": "League of Legends: Wild Rift",
+        "genre": "Moba",
+        "cpuWeight": 0.55,
+        "gpuWeight": 0.3,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 1910,
+            "medium": 1435,
+            "high": 1145,
+            "ultra": 860
+        }
+    },
+    {
+        "id": "game-51",
+        "title": "The Elder Scrolls V: Skyrim",
+        "genre": "Open World Rpg",
+        "cpuWeight": 0.2,
+        "gpuWeight": 0.7,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 368,
+            "medium": 250,
+            "high": 160,
+            "ultra": 85
+        }
+    },
+    {
+        "id": "game-52",
+        "title": "Fallout 4",
+        "genre": "Open World Rpg",
+        "cpuWeight": 0.2,
+        "gpuWeight": 0.7,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 363,
+            "medium": 248,
+            "high": 157,
+            "ultra": 82
+        }
+    },
+    {
+        "id": "game-53",
+        "title": "Fallout 76",
+        "genre": "Open World Rpg",
+        "cpuWeight": 0.2,
+        "gpuWeight": 0.7,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 382,
+            "medium": 258,
+            "high": 165,
+            "ultra": 88
+        }
+    },
+    {
+        "id": "game-54",
+        "title": "Assassin's Creed Valhalla",
+        "genre": "Open World Rpg",
+        "cpuWeight": 0.2,
+        "gpuWeight": 0.7,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 407,
+            "medium": 278,
+            "high": 176,
+            "ultra": 94
+        }
+    },
+    {
+        "id": "game-55",
+        "title": "Assassin's Creed Odyssey",
+        "genre": "Open World Rpg",
+        "cpuWeight": 0.2,
+        "gpuWeight": 0.7,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 390,
+            "medium": 267,
+            "high": 168,
+            "ultra": 91
+        }
+    },
+    {
+        "id": "game-56",
+        "title": "Assassin's Creed Mirage",
+        "genre": "Open World Rpg",
+        "cpuWeight": 0.2,
+        "gpuWeight": 0.7,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 360,
+            "medium": 245,
+            "high": 154,
+            "ultra": 82
+        }
+    },
+    {
+        "id": "game-57",
+        "title": "Ghost of Tsushima",
+        "genre": "Open World Rpg",
+        "cpuWeight": 0.2,
+        "gpuWeight": 0.7,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 366,
+            "medium": 248,
+            "high": 157,
+            "ultra": 82
+        }
+    },
+    {
+        "id": "game-58",
+        "title": "Horizon Zero Dawn",
+        "genre": "Open World Rpg",
+        "cpuWeight": 0.2,
+        "gpuWeight": 0.7,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 399,
+            "medium": 272,
+            "high": 170,
+            "ultra": 91
+        }
+    },
+    {
+        "id": "game-59",
+        "title": "Horizon Forbidden West",
+        "genre": "Open World Rpg",
+        "cpuWeight": 0.2,
+        "gpuWeight": 0.7,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 355,
+            "medium": 242,
+            "high": 151,
+            "ultra": 82
+        }
+    },
+    {
+        "id": "game-60",
+        "title": "Watch Dogs: Legion",
+        "genre": "Open World Rpg",
+        "cpuWeight": 0.2,
+        "gpuWeight": 0.7,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 360,
+            "medium": 245,
+            "high": 154,
+            "ultra": 82
+        }
+    },
+    {
+        "id": "game-61",
+        "title": "Far Cry 6",
+        "genre": "Open World Rpg",
+        "cpuWeight": 0.2,
+        "gpuWeight": 0.7,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 380,
+            "medium": 258,
+            "high": 162,
+            "ultra": 88
+        }
+    },
+    {
+        "id": "game-62",
+        "title": "Far Cry 5",
+        "genre": "Open World Rpg",
+        "cpuWeight": 0.2,
+        "gpuWeight": 0.7,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 388,
+            "medium": 264,
+            "high": 165,
+            "ultra": 88
+        }
+    },
+    {
+        "id": "game-63",
+        "title": "Dying Light 2",
+        "genre": "Open World Rpg",
+        "cpuWeight": 0.2,
+        "gpuWeight": 0.7,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 382,
+            "medium": 258,
+            "high": 165,
+            "ultra": 88
+        }
+    },
+    {
+        "id": "game-64",
+        "title": "Days Gone",
+        "genre": "Open World Rpg",
+        "cpuWeight": 0.2,
+        "gpuWeight": 0.7,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 410,
+            "medium": 278,
+            "high": 176,
+            "ultra": 94
+        }
+    },
+    {
+        "id": "game-65",
+        "title": "Cyberpunk 2077: Phantom Liberty",
+        "genre": "Open World Rpg",
+        "cpuWeight": 0.2,
+        "gpuWeight": 0.7,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 407,
+            "medium": 275,
+            "high": 173,
+            "ultra": 94
+        }
+    },
+    {
+        "id": "game-66",
+        "title": "Kingdom Come: Deliverance II",
+        "genre": "Open World Rpg",
+        "cpuWeight": 0.2,
+        "gpuWeight": 0.7,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 388,
+            "medium": 264,
+            "high": 165,
+            "ultra": 88
+        }
+    },
+    {
+        "id": "game-67",
+        "title": "Genshin Impact",
+        "genre": "Open World Rpg",
+        "cpuWeight": 0.2,
+        "gpuWeight": 0.7,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 390,
+            "medium": 264,
+            "high": 168,
+            "ultra": 88
+        }
+    },
+    {
+        "id": "game-68",
+        "title": "Zenless Zone Zero",
+        "genre": "Open World Rpg",
+        "cpuWeight": 0.2,
+        "gpuWeight": 0.7,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 410,
+            "medium": 278,
+            "high": 176,
+            "ultra": 94
+        }
+    },
+    {
+        "id": "game-69",
+        "title": "Wuthering Waves",
+        "genre": "Open World Rpg",
+        "cpuWeight": 0.2,
+        "gpuWeight": 0.7,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 393,
+            "medium": 267,
+            "high": 168,
+            "ultra": 91
+        }
+    },
+    {
+        "id": "game-70",
+        "title": "No Man's Sky",
+        "genre": "Open World Rpg",
+        "cpuWeight": 0.2,
+        "gpuWeight": 0.7,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 407,
+            "medium": 278,
+            "high": 176,
+            "ultra": 94
+        }
+    },
+    {
+        "id": "game-71",
+        "title": "Death Stranding",
+        "genre": "Open World Rpg",
+        "cpuWeight": 0.2,
+        "gpuWeight": 0.7,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 380,
+            "medium": 258,
+            "high": 162,
+            "ultra": 88
+        }
+    },
+    {
+        "id": "game-72",
+        "title": "Immortals of Aveum",
+        "genre": "Open World Rpg",
+        "cpuWeight": 0.2,
+        "gpuWeight": 0.7,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 388,
+            "medium": 264,
+            "high": 165,
+            "ultra": 88
+        }
+    },
+    {
+        "id": "game-73",
+        "title": "Diablo IV",
+        "genre": "Action Rpg",
+        "cpuWeight": 0.3,
+        "gpuWeight": 0.6,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 320,
+            "medium": 239,
+            "high": 172,
+            "ultra": 112
+        }
+    },
+    {
+        "id": "game-74",
+        "title": "Diablo III",
+        "genre": "Action Rpg",
+        "cpuWeight": 0.3,
+        "gpuWeight": 0.6,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 315,
+            "medium": 237,
+            "high": 169,
+            "ultra": 109
+        }
+    },
+    {
+        "id": "game-75",
+        "title": "Path of Exile",
+        "genre": "Action Rpg",
+        "cpuWeight": 0.3,
+        "gpuWeight": 0.6,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 296,
+            "medium": 221,
+            "high": 159,
+            "ultra": 104
+        }
+    },
+    {
+        "id": "game-76",
+        "title": "Path of Exile 2",
+        "genre": "Action Rpg",
+        "cpuWeight": 0.3,
+        "gpuWeight": 0.6,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 294,
+            "medium": 221,
+            "high": 159,
+            "ultra": 104
+        }
+    },
+    {
+        "id": "game-77",
+        "title": "Monster Hunter World",
+        "genre": "Action Rpg",
+        "cpuWeight": 0.3,
+        "gpuWeight": 0.6,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 307,
+            "medium": 229,
+            "high": 166,
+            "ultra": 107
+        }
+    },
+    {
+        "id": "game-78",
+        "title": "Monster Hunter Rise",
+        "genre": "Action Rpg",
+        "cpuWeight": 0.3,
+        "gpuWeight": 0.6,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 315,
+            "medium": 237,
+            "high": 172,
+            "ultra": 109
+        }
+    },
+    {
+        "id": "game-79",
+        "title": "Monster Hunter Wilds",
+        "genre": "Action Rpg",
+        "cpuWeight": 0.3,
+        "gpuWeight": 0.6,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 309,
+            "medium": 231,
+            "high": 166,
+            "ultra": 109
+        }
+    },
+    {
+        "id": "game-80",
+        "title": "Nioh 2",
+        "genre": "Action Rpg",
+        "cpuWeight": 0.3,
+        "gpuWeight": 0.6,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 307,
+            "medium": 231,
+            "high": 166,
+            "ultra": 107
+        }
+    },
+    {
+        "id": "game-81",
+        "title": "Wo Long: Fallen Dynasty",
+        "genre": "Action Rpg",
+        "cpuWeight": 0.3,
+        "gpuWeight": 0.6,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 325,
+            "medium": 244,
+            "high": 177,
+            "ultra": 114
+        }
+    },
+    {
+        "id": "game-82",
+        "title": "Lies of P",
+        "genre": "Action Rpg",
+        "cpuWeight": 0.3,
+        "gpuWeight": 0.6,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 328,
+            "medium": 247,
+            "high": 177,
+            "ultra": 114
+        }
+    },
+    {
+        "id": "game-83",
+        "title": "Lords of the Fallen",
+        "genre": "Action Rpg",
+        "cpuWeight": 0.3,
+        "gpuWeight": 0.6,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 325,
+            "medium": 244,
+            "high": 177,
+            "ultra": 114
+        }
+    },
+    {
+        "id": "game-84",
+        "title": "Remnant II",
+        "genre": "Action Rpg",
+        "cpuWeight": 0.3,
+        "gpuWeight": 0.6,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 330,
+            "medium": 247,
+            "high": 179,
+            "ultra": 114
+        }
+    },
+    {
+        "id": "game-85",
+        "title": "Dark Souls III",
+        "genre": "Action Rpg",
+        "cpuWeight": 0.3,
+        "gpuWeight": 0.6,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 309,
+            "medium": 234,
+            "high": 169,
+            "ultra": 109
+        }
+    },
+    {
+        "id": "game-86",
+        "title": "Sekiro: Shadows Die Twice",
+        "genre": "Action Rpg",
+        "cpuWeight": 0.3,
+        "gpuWeight": 0.6,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 320,
+            "medium": 239,
+            "high": 174,
+            "ultra": 112
+        }
+    },
+    {
+        "id": "game-87",
+        "title": "Code Vein",
+        "genre": "Action Rpg",
+        "cpuWeight": 0.3,
+        "gpuWeight": 0.6,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 289,
+            "medium": 216,
+            "high": 156,
+            "ultra": 101
+        }
+    },
+    {
+        "id": "game-88",
+        "title": "Star Wars Jedi: Survivor",
+        "genre": "Action Rpg",
+        "cpuWeight": 0.3,
+        "gpuWeight": 0.6,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 325,
+            "medium": 244,
+            "high": 177,
+            "ultra": 114
+        }
+    },
+    {
+        "id": "game-89",
+        "title": "Star Wars Jedi: Fallen Order",
+        "genre": "Action Rpg",
+        "cpuWeight": 0.3,
+        "gpuWeight": 0.6,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 286,
+            "medium": 216,
+            "high": 156,
+            "ultra": 101
+        }
+    },
+    {
+        "id": "game-90",
+        "title": "Just Cause 4",
+        "genre": "Open World",
+        "cpuWeight": 0.25,
+        "gpuWeight": 0.6,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 335,
+            "medium": 252,
+            "high": 177,
+            "ultra": 114
+        }
+    },
+    {
+        "id": "game-91",
+        "title": "Saints Row (2022)",
+        "genre": "Open World",
+        "cpuWeight": 0.25,
+        "gpuWeight": 0.6,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 304,
+            "medium": 228,
+            "high": 160,
+            "ultra": 104
+        }
+    },
+    {
+        "id": "game-92",
+        "title": "Watch Dogs 2",
+        "genre": "Open World",
+        "cpuWeight": 0.25,
+        "gpuWeight": 0.6,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 333,
+            "medium": 251,
+            "high": 175,
+            "ultra": 114
+        }
+    },
+    {
+        "id": "game-93",
+        "title": "Marvel's Spider-Man Remastered",
+        "genre": "Open World",
+        "cpuWeight": 0.25,
+        "gpuWeight": 0.6,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 305,
+            "medium": 228,
+            "high": 160,
+            "ultra": 104
+        }
+    },
+    {
+        "id": "game-94",
+        "title": "Sleeping Dogs: Definitive Edition",
+        "genre": "Open World",
+        "cpuWeight": 0.25,
+        "gpuWeight": 0.6,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 312,
+            "medium": 234,
+            "high": 163,
+            "ultra": 106
+        }
+    },
+    {
+        "id": "game-95",
+        "title": "Final Fantasy VII Remake Intergrade",
+        "genre": "Rpg",
+        "cpuWeight": 0.35,
+        "gpuWeight": 0.55,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 360,
+            "medium": 265,
+            "high": 180,
+            "ultra": 108
+        }
+    },
+    {
+        "id": "game-96",
+        "title": "Final Fantasy XVI",
+        "genre": "Rpg",
+        "cpuWeight": 0.35,
+        "gpuWeight": 0.55,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 378,
+            "medium": 278,
+            "high": 190,
+            "ultra": 112
+        }
+    },
+    {
+        "id": "game-97",
+        "title": "Persona 5 Royal",
+        "genre": "Rpg",
+        "cpuWeight": 0.35,
+        "gpuWeight": 0.55,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 372,
+            "medium": 272,
+            "high": 185,
+            "ultra": 112
+        }
+    },
+    {
+        "id": "game-98",
+        "title": "Persona 3 Reload",
+        "genre": "Rpg",
+        "cpuWeight": 0.35,
+        "gpuWeight": 0.55,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 402,
+            "medium": 295,
+            "high": 202,
+            "ultra": 120
+        }
+    },
+    {
+        "id": "game-99",
+        "title": "Divinity: Original Sin 2",
+        "genre": "Rpg",
+        "cpuWeight": 0.35,
+        "gpuWeight": 0.55,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 350,
+            "medium": 258,
+            "high": 175,
+            "ultra": 105
+        }
+    },
+    {
+        "id": "game-100",
+        "title": "Pillars of Eternity II: Deadfire",
+        "genre": "Rpg",
+        "cpuWeight": 0.35,
+        "gpuWeight": 0.55,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 368,
+            "medium": 270,
+            "high": 182,
+            "ultra": 110
+        }
+    },
+    {
+        "id": "game-101",
+        "title": "Disco Elysium",
+        "genre": "Rpg",
+        "cpuWeight": 0.35,
+        "gpuWeight": 0.55,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 392,
+            "medium": 288,
+            "high": 195,
+            "ultra": 118
+        }
+    },
+    {
+        "id": "game-102",
+        "title": "Mass Effect Legendary Edition",
+        "genre": "Rpg",
+        "cpuWeight": 0.35,
+        "gpuWeight": 0.55,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 402,
+            "medium": 295,
+            "high": 202,
+            "ultra": 120
+        }
+    },
+    {
+        "id": "game-103",
+        "title": "Dragon Age: Inquisition",
+        "genre": "Rpg",
+        "cpuWeight": 0.35,
+        "gpuWeight": 0.55,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 395,
+            "medium": 290,
+            "high": 198,
+            "ultra": 118
+        }
+    },
+    {
+        "id": "game-104",
+        "title": "Dragon Age: The Veilguard",
+        "genre": "Rpg",
+        "cpuWeight": 0.35,
+        "gpuWeight": 0.55,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 365,
+            "medium": 268,
+            "high": 182,
+            "ultra": 110
+        }
+    },
+    {
+        "id": "game-105",
+        "title": "Octopath Traveler II",
+        "genre": "Rpg",
+        "cpuWeight": 0.35,
+        "gpuWeight": 0.55,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 402,
+            "medium": 295,
+            "high": 200,
+            "ultra": 120
+        }
+    },
+    {
+        "id": "game-106",
+        "title": "Age of Empires IV",
+        "genre": "Strategy",
+        "cpuWeight": 0.6,
+        "gpuWeight": 0.25,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 488,
+            "medium": 364,
+            "high": 270,
+            "ultra": 195
+        }
+    },
+    {
+        "id": "game-107",
+        "title": "Age of Empires II: Definitive Edition",
+        "genre": "Strategy",
+        "cpuWeight": 0.6,
+        "gpuWeight": 0.25,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 557,
+            "medium": 419,
+            "high": 310,
+            "ultra": 224
+        }
+    },
+    {
+        "id": "game-108",
+        "title": "StarCraft II",
+        "genre": "Strategy",
+        "cpuWeight": 0.6,
+        "gpuWeight": 0.25,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 497,
+            "medium": 373,
+            "high": 276,
+            "ultra": 198
+        }
+    },
+    {
+        "id": "game-109",
+        "title": "Company of Heroes 3",
+        "genre": "Strategy",
+        "cpuWeight": 0.6,
+        "gpuWeight": 0.25,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 488,
+            "medium": 364,
+            "high": 270,
+            "ultra": 195
+        }
+    },
+    {
+        "id": "game-110",
+        "title": "Anno 1800",
+        "genre": "Strategy",
+        "cpuWeight": 0.6,
+        "gpuWeight": 0.25,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 537,
+            "medium": 405,
+            "high": 298,
+            "ultra": 215
+        }
+    },
+    {
+        "id": "game-111",
+        "title": "Frostpunk 2",
+        "genre": "Strategy",
+        "cpuWeight": 0.6,
+        "gpuWeight": 0.25,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 511,
+            "medium": 385,
+            "high": 284,
+            "ultra": 204
+        }
+    },
+    {
+        "id": "game-112",
+        "title": "Crusader Kings III",
+        "genre": "Strategy",
+        "cpuWeight": 0.6,
+        "gpuWeight": 0.25,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 494,
+            "medium": 370,
+            "high": 273,
+            "ultra": 198
+        }
+    },
+    {
+        "id": "game-113",
+        "title": "Stellaris",
+        "genre": "Strategy",
+        "cpuWeight": 0.6,
+        "gpuWeight": 0.25,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 554,
+            "medium": 416,
+            "high": 307,
+            "ultra": 221
+        }
+    },
+    {
+        "id": "game-114",
+        "title": "Hearts of Iron IV",
+        "genre": "Strategy",
+        "cpuWeight": 0.6,
+        "gpuWeight": 0.25,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 534,
+            "medium": 402,
+            "high": 298,
+            "ultra": 215
+        }
+    },
+    {
+        "id": "game-115",
+        "title": "Europa Universalis IV",
+        "genre": "Strategy",
+        "cpuWeight": 0.6,
+        "gpuWeight": 0.25,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 485,
+            "medium": 364,
+            "high": 270,
+            "ultra": 195
+        }
+    },
+    {
+        "id": "game-116",
+        "title": "XCOM 2",
+        "genre": "Strategy",
+        "cpuWeight": 0.6,
+        "gpuWeight": 0.25,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 485,
+            "medium": 364,
+            "high": 270,
+            "ultra": 195
+        }
+    },
+    {
+        "id": "game-117",
+        "title": "Homeworld 3",
+        "genre": "Strategy",
+        "cpuWeight": 0.6,
+        "gpuWeight": 0.25,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 505,
+            "medium": 379,
+            "high": 281,
+            "ultra": 201
+        }
+    },
+    {
+        "id": "game-118",
+        "title": "They Are Billions",
+        "genre": "Strategy",
+        "cpuWeight": 0.6,
+        "gpuWeight": 0.25,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 545,
+            "medium": 408,
+            "high": 301,
+            "ultra": 218
+        }
+    },
+    {
+        "id": "game-119",
+        "title": "Cities: Skylines II",
+        "genre": "Simulation",
+        "cpuWeight": 0.35,
+        "gpuWeight": 0.55,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 410,
+            "medium": 308,
+            "high": 214,
+            "ultra": 125
+        }
+    },
+    {
+        "id": "game-120",
+        "title": "Cities: Skylines",
+        "genre": "Simulation",
+        "cpuWeight": 0.35,
+        "gpuWeight": 0.55,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 417,
+            "medium": 312,
+            "high": 218,
+            "ultra": 125
+        }
+    },
+    {
+        "id": "game-121",
+        "title": "Farming Simulator 25",
+        "genre": "Simulation",
+        "cpuWeight": 0.35,
+        "gpuWeight": 0.55,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 363,
+            "medium": 273,
+            "high": 187,
+            "ultra": 109
+        }
+    },
+    {
+        "id": "game-122",
+        "title": "Planet Coaster 2",
+        "genre": "Simulation",
+        "cpuWeight": 0.35,
+        "gpuWeight": 0.55,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 394,
+            "medium": 296,
+            "high": 203,
+            "ultra": 117
+        }
+    },
+    {
+        "id": "game-123",
+        "title": "Planet Zoo",
+        "genre": "Simulation",
+        "cpuWeight": 0.35,
+        "gpuWeight": 0.55,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 406,
+            "medium": 304,
+            "high": 211,
+            "ultra": 121
+        }
+    },
+    {
+        "id": "game-124",
+        "title": "The Sims 4",
+        "genre": "Simulation",
+        "cpuWeight": 0.35,
+        "gpuWeight": 0.55,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 374,
+            "medium": 281,
+            "high": 195,
+            "ultra": 113
+        }
+    },
+    {
+        "id": "game-125",
+        "title": "Euro Truck Simulator 2",
+        "genre": "Simulation",
+        "cpuWeight": 0.35,
+        "gpuWeight": 0.55,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 398,
+            "medium": 300,
+            "high": 207,
+            "ultra": 121
+        }
+    },
+    {
+        "id": "game-126",
+        "title": "American Truck Simulator",
+        "genre": "Simulation",
+        "cpuWeight": 0.35,
+        "gpuWeight": 0.55,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 378,
+            "medium": 285,
+            "high": 195,
+            "ultra": 113
+        }
+    },
+    {
+        "id": "game-127",
+        "title": "Kerbal Space Program 2",
+        "genre": "Simulation",
+        "cpuWeight": 0.35,
+        "gpuWeight": 0.55,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 386,
+            "medium": 289,
+            "high": 199,
+            "ultra": 117
+        }
+    },
+    {
+        "id": "game-128",
+        "title": "House Flipper 2",
+        "genre": "Simulation",
+        "cpuWeight": 0.35,
+        "gpuWeight": 0.55,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 359,
+            "medium": 269,
+            "high": 187,
+            "ultra": 109
+        }
+    },
+    {
+        "id": "game-129",
+        "title": "F1 24",
+        "genre": "Racing",
+        "cpuWeight": 0.2,
+        "gpuWeight": 0.68,
+        "ramWeight": 0.12,
+        "baselineFps": {
+            "low": 420,
+            "medium": 302,
+            "high": 221,
+            "ultra": 139
+        }
+    },
+    {
+        "id": "game-130",
+        "title": "F1 23",
+        "genre": "Racing",
+        "cpuWeight": 0.2,
+        "gpuWeight": 0.68,
+        "ramWeight": 0.12,
+        "baselineFps": {
+            "low": 439,
+            "medium": 319,
+            "high": 233,
+            "ultra": 146
+        }
+    },
+    {
+        "id": "game-131",
+        "title": "Need for Speed Unbound",
+        "genre": "Racing",
+        "cpuWeight": 0.2,
+        "gpuWeight": 0.68,
+        "ramWeight": 0.12,
+        "baselineFps": {
+            "low": 427,
+            "medium": 307,
+            "high": 226,
+            "ultra": 142
+        }
+    },
+    {
+        "id": "game-132",
+        "title": "Need for Speed Heat",
+        "genre": "Racing",
+        "cpuWeight": 0.2,
+        "gpuWeight": 0.68,
+        "ramWeight": 0.12,
+        "baselineFps": {
+            "low": 422,
+            "medium": 305,
+            "high": 223,
+            "ultra": 142
+        }
+    },
+    {
+        "id": "game-133",
+        "title": "Assetto Corsa Competizione",
+        "genre": "Racing",
+        "cpuWeight": 0.2,
+        "gpuWeight": 0.68,
+        "ramWeight": 0.12,
+        "baselineFps": {
+            "low": 430,
+            "medium": 310,
+            "high": 226,
+            "ultra": 144
+        }
+    },
+    {
+        "id": "game-134",
+        "title": "iRacing",
+        "genre": "Racing",
+        "cpuWeight": 0.2,
+        "gpuWeight": 0.68,
+        "ramWeight": 0.12,
+        "baselineFps": {
+            "low": 430,
+            "medium": 310,
+            "high": 226,
+            "ultra": 144
+        }
+    },
+    {
+        "id": "game-135",
+        "title": "Wreckfest",
+        "genre": "Racing",
+        "cpuWeight": 0.2,
+        "gpuWeight": 0.68,
+        "ramWeight": 0.12,
+        "baselineFps": {
+            "low": 398,
+            "medium": 288,
+            "high": 211,
+            "ultra": 132
+        }
+    },
+    {
+        "id": "game-136",
+        "title": "DiRT Rally 2.0",
+        "genre": "Racing",
+        "cpuWeight": 0.2,
+        "gpuWeight": 0.68,
+        "ramWeight": 0.12,
+        "baselineFps": {
+            "low": 406,
+            "medium": 293,
+            "high": 214,
+            "ultra": 134
+        }
+    },
+    {
+        "id": "game-137",
+        "title": "EA Sports WRC",
+        "genre": "Racing",
+        "cpuWeight": 0.2,
+        "gpuWeight": 0.68,
+        "ramWeight": 0.12,
+        "baselineFps": {
+            "low": 406,
+            "medium": 293,
+            "high": 214,
+            "ultra": 134
+        }
+    },
+    {
+        "id": "game-138",
+        "title": "Forza Motorsport",
+        "genre": "Racing",
+        "cpuWeight": 0.2,
+        "gpuWeight": 0.68,
+        "ramWeight": 0.12,
+        "baselineFps": {
+            "low": 439,
+            "medium": 317,
+            "high": 230,
+            "ultra": 146
+        }
+    },
+    {
+        "id": "game-139",
+        "title": "The Crew Motorfest",
+        "genre": "Racing",
+        "cpuWeight": 0.2,
+        "gpuWeight": 0.68,
+        "ramWeight": 0.12,
+        "baselineFps": {
+            "low": 420,
+            "medium": 302,
+            "high": 221,
+            "ultra": 139
+        }
+    },
+    {
+        "id": "game-140",
+        "title": "Terraria",
+        "genre": "Sandbox",
+        "cpuWeight": 0.65,
+        "gpuWeight": 0.2,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 1011,
+            "medium": 753,
+            "high": 549,
+            "ultra": 375
+        }
+    },
+    {
+        "id": "game-141",
+        "title": "Roblox",
+        "genre": "Sandbox",
+        "cpuWeight": 0.65,
+        "gpuWeight": 0.2,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 1020,
+            "medium": 759,
+            "high": 555,
+            "ultra": 378
+        }
+    },
+    {
+        "id": "game-142",
+        "title": "Garry's Mod",
+        "genre": "Sandbox",
+        "cpuWeight": 0.65,
+        "gpuWeight": 0.2,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 1011,
+            "medium": 750,
+            "high": 549,
+            "ultra": 375
+        }
+    },
+    {
+        "id": "game-143",
+        "title": "Valheim",
+        "genre": "Sandbox",
+        "cpuWeight": 0.65,
+        "gpuWeight": 0.2,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 1083,
+            "medium": 804,
+            "high": 588,
+            "ultra": 402
+        }
+    },
+    {
+        "id": "game-144",
+        "title": "Core Keeper",
+        "genre": "Sandbox",
+        "cpuWeight": 0.65,
+        "gpuWeight": 0.2,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 1101,
+            "medium": 819,
+            "high": 597,
+            "ultra": 408
+        }
+    },
+    {
+        "id": "game-145",
+        "title": "Satisfactory",
+        "genre": "Sandbox",
+        "cpuWeight": 0.65,
+        "gpuWeight": 0.2,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 1062,
+            "medium": 789,
+            "high": 576,
+            "ultra": 393
+        }
+    },
+    {
+        "id": "game-146",
+        "title": "Astroneer",
+        "genre": "Sandbox",
+        "cpuWeight": 0.65,
+        "gpuWeight": 0.2,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 1026,
+            "medium": 762,
+            "high": 558,
+            "ultra": 381
+        }
+    },
+    {
+        "id": "game-147",
+        "title": "Street Fighter 6",
+        "genre": "Fighting",
+        "cpuWeight": 0.4,
+        "gpuWeight": 0.45,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 852,
+            "medium": 627,
+            "high": 468,
+            "ultra": 342
+        }
+    },
+    {
+        "id": "game-148",
+        "title": "Tekken 8",
+        "genre": "Fighting",
+        "cpuWeight": 0.4,
+        "gpuWeight": 0.45,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 921,
+            "medium": 675,
+            "high": 507,
+            "ultra": 369
+        }
+    },
+    {
+        "id": "game-149",
+        "title": "Mortal Kombat 1",
+        "genre": "Fighting",
+        "cpuWeight": 0.4,
+        "gpuWeight": 0.45,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 894,
+            "medium": 654,
+            "high": 492,
+            "ultra": 357
+        }
+    },
+    {
+        "id": "game-150",
+        "title": "Guilty Gear Strive",
+        "genre": "Fighting",
+        "cpuWeight": 0.4,
+        "gpuWeight": 0.45,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 843,
+            "medium": 618,
+            "high": 465,
+            "ultra": 339
+        }
+    },
+    {
+        "id": "game-151",
+        "title": "Hollow Knight",
+        "genre": "Platformer",
+        "cpuWeight": 0.3,
+        "gpuWeight": 0.5,
+        "ramWeight": 0.2,
+        "baselineFps": {
+            "low": 774,
+            "medium": 582,
+            "high": 444,
+            "ultra": 303
+        }
+    },
+    {
+        "id": "game-152",
+        "title": "Ori and the Will of the Wisps",
+        "genre": "Platformer",
+        "cpuWeight": 0.3,
+        "gpuWeight": 0.5,
+        "ramWeight": 0.2,
+        "baselineFps": {
+            "low": 891,
+            "medium": 669,
+            "high": 510,
+            "ultra": 351
+        }
+    },
+    {
+        "id": "game-153",
+        "title": "Celeste",
+        "genre": "Platformer",
+        "cpuWeight": 0.3,
+        "gpuWeight": 0.5,
+        "ramWeight": 0.2,
+        "baselineFps": {
+            "low": 891,
+            "medium": 669,
+            "high": 510,
+            "ultra": 351
+        }
+    },
+    {
+        "id": "game-154",
+        "title": "It Takes Two",
+        "genre": "Platformer",
+        "cpuWeight": 0.3,
+        "gpuWeight": 0.5,
+        "ramWeight": 0.2,
+        "baselineFps": {
+            "low": 822,
+            "medium": 615,
+            "high": 471,
+            "ultra": 324
+        }
+    },
+    {
+        "id": "game-155",
+        "title": "Cuphead",
+        "genre": "Platformer",
+        "cpuWeight": 0.3,
+        "gpuWeight": 0.5,
+        "ramWeight": 0.2,
+        "baselineFps": {
+            "low": 882,
+            "medium": 663,
+            "high": 504,
+            "ultra": 348
+        }
+    },
+    {
+        "id": "game-156",
+        "title": "Rayman Legends",
+        "genre": "Platformer",
+        "cpuWeight": 0.3,
+        "gpuWeight": 0.5,
+        "ramWeight": 0.2,
+        "baselineFps": {
+            "low": 873,
+            "medium": 654,
+            "high": 498,
+            "ultra": 342
+        }
+    },
+    {
+        "id": "game-157",
+        "title": "Resident Evil 4",
+        "genre": "Horror",
+        "cpuWeight": 0.25,
+        "gpuWeight": 0.62,
+        "ramWeight": 0.13,
+        "baselineFps": {
+            "low": 441,
+            "medium": 315,
+            "high": 213,
+            "ultra": 126
+        }
+    },
+    {
+        "id": "game-158",
+        "title": "Resident Evil Village",
+        "genre": "Horror",
+        "cpuWeight": 0.25,
+        "gpuWeight": 0.62,
+        "ramWeight": 0.13,
+        "baselineFps": {
+            "low": 447,
+            "medium": 318,
+            "high": 216,
+            "ultra": 126
+        }
+    },
+    {
+        "id": "game-159",
+        "title": "Resident Evil 2",
+        "genre": "Horror",
+        "cpuWeight": 0.25,
+        "gpuWeight": 0.62,
+        "ramWeight": 0.13,
+        "baselineFps": {
+            "low": 447,
+            "medium": 321,
+            "high": 219,
+            "ultra": 129
+        }
+    },
+    {
+        "id": "game-160",
+        "title": "Alan Wake II",
+        "genre": "Horror",
+        "cpuWeight": 0.25,
+        "gpuWeight": 0.62,
+        "ramWeight": 0.13,
+        "baselineFps": {
+            "low": 453,
+            "medium": 324,
+            "high": 219,
+            "ultra": 129
+        }
+    },
+    {
+        "id": "game-161",
+        "title": "Dead Space (2023)",
+        "genre": "Horror",
+        "cpuWeight": 0.25,
+        "gpuWeight": 0.62,
+        "ramWeight": 0.13,
+        "baselineFps": {
+            "low": 405,
+            "medium": 291,
+            "high": 198,
+            "ultra": 117
+        }
+    },
+    {
+        "id": "game-162",
+        "title": "The Callisto Protocol",
+        "genre": "Horror",
+        "cpuWeight": 0.25,
+        "gpuWeight": 0.62,
+        "ramWeight": 0.13,
+        "baselineFps": {
+            "low": 393,
+            "medium": 282,
+            "high": 192,
+            "ultra": 111
+        }
+    },
+    {
+        "id": "game-163",
+        "title": "Phasmophobia",
+        "genre": "Horror",
+        "cpuWeight": 0.25,
+        "gpuWeight": 0.62,
+        "ramWeight": 0.13,
+        "baselineFps": {
+            "low": 447,
+            "medium": 321,
+            "high": 216,
+            "ultra": 129
+        }
+    },
+    {
+        "id": "game-164",
+        "title": "Lethal Company",
+        "genre": "Horror",
+        "cpuWeight": 0.25,
+        "gpuWeight": 0.62,
+        "ramWeight": 0.13,
+        "baselineFps": {
+            "low": 417,
+            "medium": 297,
+            "high": 204,
+            "ultra": 120
+        }
+    },
+    {
+        "id": "game-165",
+        "title": "Amnesia: The Bunker",
+        "genre": "Horror",
+        "cpuWeight": 0.25,
+        "gpuWeight": 0.62,
+        "ramWeight": 0.13,
+        "baselineFps": {
+            "low": 432,
+            "medium": 309,
+            "high": 210,
+            "ultra": 123
+        }
+    },
+    {
+        "id": "game-166",
+        "title": "Silent Hill 2 (2024)",
+        "genre": "Horror",
+        "cpuWeight": 0.25,
+        "gpuWeight": 0.62,
+        "ramWeight": 0.13,
+        "baselineFps": {
+            "low": 387,
+            "medium": 276,
+            "high": 189,
+            "ultra": 111
+        }
+    },
+    {
+        "id": "game-167",
+        "title": "Portal 2",
+        "genre": "Puzzle",
+        "cpuWeight": 0.3,
+        "gpuWeight": 0.4,
+        "ramWeight": 0.3,
+        "baselineFps": {
+            "low": 930,
+            "medium": 744,
+            "high": 588,
+            "ultra": 435
+        }
+    },
+    {
+        "id": "game-168",
+        "title": "Portal",
+        "genre": "Puzzle",
+        "cpuWeight": 0.3,
+        "gpuWeight": 0.4,
+        "ramWeight": 0.3,
+        "baselineFps": {
+            "low": 945,
+            "medium": 756,
+            "high": 600,
+            "ultra": 441
+        }
+    },
+    {
+        "id": "game-169",
+        "title": "The Talos Principle 2",
+        "genre": "Puzzle",
+        "cpuWeight": 0.3,
+        "gpuWeight": 0.4,
+        "ramWeight": 0.3,
+        "baselineFps": {
+            "low": 888,
+            "medium": 711,
+            "high": 564,
+            "ultra": 414
+        }
+    },
+    {
+        "id": "game-170",
+        "title": "Baba Is You",
+        "genre": "Puzzle",
+        "cpuWeight": 0.3,
+        "gpuWeight": 0.4,
+        "ramWeight": 0.3,
+        "baselineFps": {
+            "low": 867,
+            "medium": 693,
+            "high": 549,
+            "ultra": 405
+        }
+    },
+    {
+        "id": "game-171",
+        "title": "EA Sports FC 25",
+        "genre": "Sports",
+        "cpuWeight": 0.35,
+        "gpuWeight": 0.5,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 600,
+            "medium": 450,
+            "high": 315,
+            "ultra": 210
+        }
+    },
+    {
+        "id": "game-172",
+        "title": "NBA 2K25",
+        "genre": "Sports",
+        "cpuWeight": 0.35,
+        "gpuWeight": 0.5,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 633,
+            "medium": 474,
+            "high": 333,
+            "ultra": 222
+        }
+    },
+    {
+        "id": "game-173",
+        "title": "WWE 2K24",
+        "genre": "Sports",
+        "cpuWeight": 0.35,
+        "gpuWeight": 0.5,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 609,
+            "medium": 456,
+            "high": 321,
+            "ultra": 213
+        }
+    },
+    {
+        "id": "game-174",
+        "title": "PGA Tour 2K23",
+        "genre": "Sports",
+        "cpuWeight": 0.35,
+        "gpuWeight": 0.5,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 564,
+            "medium": 423,
+            "high": 294,
+            "ultra": 198
+        }
+    },
+    {
+        "id": "game-175",
+        "title": "Rocket League",
+        "genre": "Sports",
+        "cpuWeight": 0.35,
+        "gpuWeight": 0.5,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 615,
+            "medium": 459,
+            "high": 321,
+            "ultra": 216
+        }
+    },
+    {
+        "id": "game-176",
+        "title": "World of Warcraft",
+        "genre": "Mmorpg",
+        "cpuWeight": 0.4,
+        "gpuWeight": 0.48,
+        "ramWeight": 0.12,
+        "baselineFps": {
+            "low": 453,
+            "medium": 333,
+            "high": 237,
+            "ultra": 150
+        }
+    },
+    {
+        "id": "game-177",
+        "title": "Final Fantasy XIV",
+        "genre": "Mmorpg",
+        "cpuWeight": 0.4,
+        "gpuWeight": 0.48,
+        "ramWeight": 0.12,
+        "baselineFps": {
+            "low": 447,
+            "medium": 327,
+            "high": 231,
+            "ultra": 150
+        }
+    },
+    {
+        "id": "game-178",
+        "title": "Guild Wars 2",
+        "genre": "Mmorpg",
+        "cpuWeight": 0.4,
+        "gpuWeight": 0.48,
+        "ramWeight": 0.12,
+        "baselineFps": {
+            "low": 483,
+            "medium": 354,
+            "high": 252,
+            "ultra": 162
+        }
+    },
+    {
+        "id": "game-179",
+        "title": "The Elder Scrolls Online",
+        "genre": "Mmorpg",
+        "cpuWeight": 0.4,
+        "gpuWeight": 0.48,
+        "ramWeight": 0.12,
+        "baselineFps": {
+            "low": 450,
+            "medium": 330,
+            "high": 234,
+            "ultra": 150
+        }
+    },
+    {
+        "id": "game-180",
+        "title": "Lost Ark",
+        "genre": "Mmorpg",
+        "cpuWeight": 0.4,
+        "gpuWeight": 0.48,
+        "ramWeight": 0.12,
+        "baselineFps": {
+            "low": 438,
+            "medium": 321,
+            "high": 228,
+            "ultra": 147
+        }
+    },
+    {
+        "id": "game-181",
+        "title": "Black Desert Online",
+        "genre": "Mmorpg",
+        "cpuWeight": 0.4,
+        "gpuWeight": 0.48,
+        "ramWeight": 0.12,
+        "baselineFps": {
+            "low": 438,
+            "medium": 321,
+            "high": 228,
+            "ultra": 147
+        }
+    },
+    {
+        "id": "game-182",
+        "title": "New World",
+        "genre": "Mmorpg",
+        "cpuWeight": 0.4,
+        "gpuWeight": 0.48,
+        "ramWeight": 0.12,
+        "baselineFps": {
+            "low": 435,
+            "medium": 318,
+            "high": 225,
+            "ultra": 144
+        }
+    },
+    {
+        "id": "game-183",
+        "title": "Throne and Liberty",
+        "genre": "Mmorpg",
+        "cpuWeight": 0.4,
+        "gpuWeight": 0.48,
+        "ramWeight": 0.12,
+        "baselineFps": {
+            "low": 474,
+            "medium": 348,
+            "high": 246,
+            "ultra": 159
+        }
+    },
+    {
+        "id": "game-184",
+        "title": "Hades",
+        "genre": "Roguelike",
+        "cpuWeight": 0.35,
+        "gpuWeight": 0.45,
+        "ramWeight": 0.2,
+        "baselineFps": {
+            "low": 777,
+            "medium": 591,
+            "high": 435,
+            "ultra": 294
+        }
+    },
+    {
+        "id": "game-185",
+        "title": "Hades II",
+        "genre": "Roguelike",
+        "cpuWeight": 0.35,
+        "gpuWeight": 0.45,
+        "ramWeight": 0.2,
+        "baselineFps": {
+            "low": 756,
+            "medium": 576,
+            "high": 423,
+            "ultra": 288
+        }
+    },
+    {
+        "id": "game-186",
+        "title": "The Binding of Isaac: Rebirth",
+        "genre": "Roguelike",
+        "cpuWeight": 0.35,
+        "gpuWeight": 0.45,
+        "ramWeight": 0.2,
+        "baselineFps": {
+            "low": 732,
+            "medium": 558,
+            "high": 411,
+            "ultra": 279
+        }
+    },
+    {
+        "id": "game-187",
+        "title": "Dead Cells",
+        "genre": "Roguelike",
+        "cpuWeight": 0.35,
+        "gpuWeight": 0.45,
+        "ramWeight": 0.2,
+        "baselineFps": {
+            "low": 705,
+            "medium": 534,
+            "high": 393,
+            "ultra": 267
+        }
+    },
+    {
+        "id": "game-188",
+        "title": "Risk of Rain 2",
+        "genre": "Roguelike",
+        "cpuWeight": 0.35,
+        "gpuWeight": 0.45,
+        "ramWeight": 0.2,
+        "baselineFps": {
+            "low": 717,
+            "medium": 546,
+            "high": 402,
+            "ultra": 273
+        }
+    },
+    {
+        "id": "game-189",
+        "title": "Slay the Spire",
+        "genre": "Roguelike",
+        "cpuWeight": 0.35,
+        "gpuWeight": 0.45,
+        "ramWeight": 0.2,
+        "baselineFps": {
+            "low": 807,
+            "medium": 612,
+            "high": 450,
+            "ultra": 306
+        }
+    },
+    {
+        "id": "game-190",
+        "title": "Vampire Survivors",
+        "genre": "Roguelike",
+        "cpuWeight": 0.35,
+        "gpuWeight": 0.45,
+        "ramWeight": 0.2,
+        "baselineFps": {
+            "low": 705,
+            "medium": 537,
+            "high": 396,
+            "ultra": 267
+        }
+    },
+    {
+        "id": "game-191",
+        "title": "Balatro",
+        "genre": "Roguelike",
+        "cpuWeight": 0.35,
+        "gpuWeight": 0.45,
+        "ramWeight": 0.2,
+        "baselineFps": {
+            "low": 744,
+            "medium": 567,
+            "high": 417,
+            "ultra": 282
+        }
+    },
+    {
+        "id": "game-192",
+        "title": "7 Days to Die",
+        "genre": "Survival",
+        "cpuWeight": 0.3,
+        "gpuWeight": 0.55,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 396,
+            "medium": 291,
+            "high": 198,
+            "ultra": 123
+        }
+    },
+    {
+        "id": "game-193",
+        "title": "The Forest",
+        "genre": "Survival",
+        "cpuWeight": 0.3,
+        "gpuWeight": 0.55,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 408,
+            "medium": 297,
+            "high": 204,
+            "ultra": 126
+        }
+    },
+    {
+        "id": "game-194",
+        "title": "Sons of the Forest",
+        "genre": "Survival",
+        "cpuWeight": 0.3,
+        "gpuWeight": 0.55,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 375,
+            "medium": 276,
+            "high": 189,
+            "ultra": 117
+        }
+    },
+    {
+        "id": "game-195",
+        "title": "Green Hell",
+        "genre": "Survival",
+        "cpuWeight": 0.3,
+        "gpuWeight": 0.55,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 375,
+            "medium": 273,
+            "high": 186,
+            "ultra": 114
+        }
+    },
+    {
+        "id": "game-196",
+        "title": "DayZ",
+        "genre": "Survival",
+        "cpuWeight": 0.3,
+        "gpuWeight": 0.55,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 369,
+            "medium": 270,
+            "high": 183,
+            "ultra": 114
+        }
+    },
+    {
+        "id": "game-197",
+        "title": "Subnautica",
+        "genre": "Survival",
+        "cpuWeight": 0.3,
+        "gpuWeight": 0.55,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 363,
+            "medium": 267,
+            "high": 183,
+            "ultra": 111
+        }
+    },
+    {
+        "id": "game-198",
+        "title": "Subnautica: Below Zero",
+        "genre": "Survival",
+        "cpuWeight": 0.3,
+        "gpuWeight": 0.55,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 363,
+            "medium": 264,
+            "high": 180,
+            "ultra": 111
+        }
+    },
+    {
+        "id": "game-199",
+        "title": "Grounded",
+        "genre": "Survival",
+        "cpuWeight": 0.3,
+        "gpuWeight": 0.55,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 399,
+            "medium": 291,
+            "high": 198,
+            "ultra": 123
+        }
+    },
+    {
+        "id": "game-200",
+        "title": "ARK: Survival Ascended",
+        "genre": "Survival",
+        "cpuWeight": 0.3,
+        "gpuWeight": 0.55,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 405,
+            "medium": 297,
+            "high": 204,
+            "ultra": 126
+        }
+    },
+    {
+        "id": "game-201",
+        "title": "Rust",
+        "genre": "Survival",
+        "cpuWeight": 0.3,
+        "gpuWeight": 0.55,
+        "ramWeight": 0.15,
+        "baselineFps": {
+            "low": 420,
+            "medium": 306,
+            "high": 210,
+            "ultra": 129
+        }
+    },
+    {
+        "id": "game-202",
+        "title": "DOOM Eternal",
+        "genre": "Shooter Sp",
+        "cpuWeight": 0.25,
+        "gpuWeight": 0.62,
+        "ramWeight": 0.13,
+        "baselineFps": {
+            "low": 1600,
+            "medium": 1250,
+            "high": 950,
+            "ultra": 708
+        }
+    },
+    {
+        "id": "game-203",
+        "title": "DOOM (2016)",
+        "genre": "Shooter Sp",
+        "cpuWeight": 0.25,
+        "gpuWeight": 0.62,
+        "ramWeight": 0.13,
+        "baselineFps": {
+            "low": 489,
+            "medium": 351,
+            "high": 237,
+            "ultra": 147
+        }
+    },
+    {
+        "id": "game-204",
+        "title": "Wolfenstein II: The New Colossus",
+        "genre": "Shooter Sp",
+        "cpuWeight": 0.25,
+        "gpuWeight": 0.62,
+        "ramWeight": 0.13,
+        "baselineFps": {
+            "low": 492,
+            "medium": 354,
+            "high": 240,
+            "ultra": 147
+        }
+    },
+    {
+        "id": "game-205",
+        "title": "Half-Life 2",
+        "genre": "Shooter Sp",
+        "cpuWeight": 0.25,
+        "gpuWeight": 0.62,
+        "ramWeight": 0.13,
+        "baselineFps": {
+            "low": 459,
+            "medium": 330,
+            "high": 225,
+            "ultra": 138
+        }
+    },
+    {
+        "id": "game-206",
+        "title": "Metro Exodus",
+        "genre": "Shooter Sp",
+        "cpuWeight": 0.25,
+        "gpuWeight": 0.62,
+        "ramWeight": 0.13,
+        "baselineFps": {
+            "low": 468,
+            "medium": 336,
+            "high": 228,
+            "ultra": 141
+        }
+    },
+    {
+        "id": "game-207",
+        "title": "BioShock Infinite",
+        "genre": "Shooter Sp",
+        "cpuWeight": 0.25,
+        "gpuWeight": 0.62,
+        "ramWeight": 0.13,
+        "baselineFps": {
+            "low": 501,
+            "medium": 360,
+            "high": 243,
+            "ultra": 150
+        }
+    },
+    {
+        "id": "game-208",
+        "title": "Control",
+        "genre": "Shooter Sp",
+        "cpuWeight": 0.25,
+        "gpuWeight": 0.62,
+        "ramWeight": 0.13,
+        "baselineFps": {
+            "low": 516,
+            "medium": 372,
+            "high": 252,
+            "ultra": 156
+        }
+    },
+    {
+        "id": "game-209",
+        "title": "Remnant: From the Ashes",
+        "genre": "Shooter Sp",
+        "cpuWeight": 0.25,
+        "gpuWeight": 0.62,
+        "ramWeight": 0.13,
+        "baselineFps": {
+            "low": 456,
+            "medium": 327,
+            "high": 222,
+            "ultra": 138
+        }
+    },
+    {
+        "id": "game-210",
+        "title": "Half-Life: Alyx",
+        "genre": "Vr",
+        "cpuWeight": 0.3,
+        "gpuWeight": 0.6,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 315,
+            "medium": 252,
+            "high": 189,
+            "ultra": 141
+        }
+    },
+    {
+        "id": "game-211",
+        "title": "Beat Saber",
+        "genre": "Vr",
+        "cpuWeight": 0.3,
+        "gpuWeight": 0.6,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 303,
+            "medium": 243,
+            "high": 180,
+            "ultra": 135
+        }
+    },
+    {
+        "id": "game-212",
+        "title": "VRChat",
+        "genre": "Vr",
+        "cpuWeight": 0.3,
+        "gpuWeight": 0.6,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 306,
+            "medium": 243,
+            "high": 183,
+            "ultra": 138
+        }
+    },
+    {
+        "id": "game-213",
+        "title": "Population: One",
+        "genre": "Vr",
+        "cpuWeight": 0.3,
+        "gpuWeight": 0.6,
+        "ramWeight": 0.1,
+        "baselineFps": {
+            "low": 321,
+            "medium": 255,
+            "high": 192,
+            "ultra": 144
         }
     }
 ]

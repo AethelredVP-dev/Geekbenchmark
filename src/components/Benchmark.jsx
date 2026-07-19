@@ -1,56 +1,78 @@
 import React, { useEffect, useContext } from 'react';
 import { runUltimateBenchmark } from '../benchmark/ultimateBenchamrk';
 import { context } from '../helpers/CONTEXT';
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, Alert, Button } from '@mui/material';
 import { GrGamepad } from "react-icons/gr";
 import gamesDataImport from '../helpers/games.json';
-import { FadeLoader } from "react-spinners";
+import { useNavigate, useLocation } from 'react-router-dom';
+import ItemsList from './Pagination';
+import PagedGamesList from './Pagination';
+import Loader from '../helpers/Loader';
+import { Helmet } from 'react-helmet-async';
 
 const Benchmark = () => {
-    const { specs, gamesData, report, setGamesData, setReport, loading, setLoading } = useContext(context);
+    const { gamesData, report, setGamesData, setReport, loading, setLoading } = useContext(context);
+    const navigate = useNavigate();
+    const location = useLocation();
+    const userSelection = location.state?.userSelection; // Receiving state from navigation safely
 
     useEffect(() => {
+        let cancelled = false;
+
         const prepareBenchmark = async () => {
-            // 2. Simply use the imported data instead of fetching
-            let currentGamesData = gamesData.length > 0 ? gamesData : gamesDataImport;
+            const currentGamesData = gamesData.length > 0 ? gamesData : gamesDataImport;
 
             if (gamesData.length === 0) {
                 setGamesData(currentGamesData);
             }
 
+            // Fallback object to ensure the algorithm doesn't break if direct URL navigation occurs
             const formattedSelection = {
-                cpu: { title: specs?.cpu?.title || "CPU", score: specs?.cpu?.score || 50 },
-                gpu: { title: specs?.gpu?.title || "GPU", score: specs?.gpu?.score || 50 },
-                ram: { title: specs?.ram?.title || "RAM", score: specs?.ram?.score || 50 },
-                'Disk-Space': { title: specs?.['Disk-Space']?.title || "Storage", score: specs?.['Disk-Space']?.score || 50 },
-                motherboard: { title: specs?.motherboard?.title || "Motherboard", score: specs?.motherboard?.score || 50 },
-                monitor: { title: specs?.monitor?.title || "Monitor", score: specs?.monitor?.score || 50 }
+                cpu: userSelection?.cpu || { title: "CPU", score: 50 },
+                gpu: userSelection?.gpu || { title: "GPU", score: 50 },
+                ram: userSelection?.ram || { title: "RAM", score: 50 },
+                'Disk-Space': userSelection?.['Disk-Space'] || { title: "Storage", score: 50 },
+                motherboard: userSelection?.motherboard || { title: "Motherboard", score: 50 },
+                monitor: userSelection?.monitor || { title: "Monitor (1920x1080 - 16:9)", score: 50 }
             };
 
+            // Run core logic via full resolution-based simulator engine
             const finalResult = runUltimateBenchmark(formattedSelection, currentGamesData);
-            setReport(finalResult);
-
-            setTimeout(() => {
-                setLoading(false);
-            }, 3000);
+            if (!cancelled) setReport(finalResult);
         };
 
         prepareBenchmark();
-    }, []);
+
+        const timer = setTimeout(() => {
+            if (!cancelled) setLoading(false);
+        }, 1200);
+
+        return () => {
+            cancelled = true;
+            clearTimeout(timer);
+        };
+    }, [userSelection]);
 
     return (
         <Box sx={{ minHeight: '100vh', width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             {loading ? (
-                <FadeLoader color="#D4AF37" />
+                <>
+                    <Helmet>
+                        <title>Geek Benchmarker - Loading</title>
+                    </Helmet>
+                    <Loader />
+                </>
             ) : (
-                <Box sx={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                    p: 4,
-                    width: '100%',
-                    boxSizing: 'border-box'
-                }}>
+
+
+                <Box sx={{ display: 'flex', flexDirection: 'column', alignParagraphs: 'center', alignItems: 'center', p: 4, width: '100%', boxSizing: 'border-box' }}>
+                    {report?.error && (
+                        <Alert severity="info" sx={{ mb: 2 }}>{report.error}</Alert>
+                    )}
+                    <Helmet>
+                        <title>Geek Benchmarker - Results</title>
+                    </Helmet>
+
                     {report && !report.error && (
                         <Box sx={{ width: '100%', px: 3 }}>
                             {/* Score Overview Section */}
@@ -62,6 +84,15 @@ const Benchmark = () => {
                                     System Tier: {report.systemReport.tier.label}
                                 </Typography>
                             </Box>
+
+                            {/* Compatibility Issues Section */}
+                            {!report.systemReport.compatibility.compatible && (
+                                <Alert severity="error" sx={{ mb: 2 }}>
+                                    {report.systemReport.compatibility.issues.map((issue, i) => (
+                                        <div key={i}>{issue}</div>
+                                    ))}
+                                </Alert>
+                            )}
 
                             {/* Bottleneck Warning Section */}
                             {report.systemReport.bottleneck.hasBottleneck && (
@@ -77,46 +108,13 @@ const Benchmark = () => {
                                 <GrGamepad style={{ marginRight: "8px" }} /> Estimated FPS:
                             </Typography>
 
-                            {/* Game Rankings Container - Responsive Flex Layout */}
-                            <Box sx={{
-                                display: 'flex',
-                                flexWrap: 'wrap',
-                                gap: 1.5,
-                                width: '100%'
-                            }}>
-                                {report.gameRankings.map((game) => (
-                                    <Box
-                                        key={game.id}
-                                        sx={{
-                                            flex: '1 1 calc(33.333% - 16px)', // Responsive 3-column layout
-                                            minWidth: '250px',
-                                            bgcolor: 'background.paper',
-                                            p: 2,
-                                            borderRadius: 2,
-                                            borderLeft: '4px solid #D4AF37',
-                                            display: 'flex',
-                                            justifyContent: 'space-between', // Pushes title left and FPS right
-                                            alignItems: 'center'
-                                        }}
-                                    >
-                                        <Typography variant="body1" sx={{ fontWeight: 'bold' }}>
-                                            {game.title}
-                                        </Typography>
-
-                                        {/* FPS and Settings display */}
-                                        <Box sx={{ textAlign: 'right' }}>
-                                            <Typography variant="body1" color="success.main" sx={{ fontWeight: 'bold' }}>
-                                                {game.estimatedFps.high} FPS
-                                            </Typography>
-                                            <Typography variant="caption" sx={{ color: '#aaa', display: 'block' }}>
-                                                (High)
-                                            </Typography>
-                                        </Box>
-                                    </Box>
-                                ))}
-                            </Box>
+                            {/* Game Rankings Responsive Container */}
+                            <PagedGamesList games={report.gameRankings} />
                         </Box>
                     )}
+                    <Button type='button' variant="contained" color="primary" onClick={() => navigate('/')} sx={{ mt: 3 }}>
+                        Select Specs Again
+                    </Button>
                 </Box>
             )}
         </Box>
