@@ -9,6 +9,7 @@ import ItemsList from './Pagination';
 import PagedGamesList from './Pagination';
 import Loader from '../helpers/Loader';
 import { Helmet } from 'react-helmet-async';
+import BenchmarkChart from '../benchmark/BenchamrkChart';
 
 const Benchmark = () => {
     const {
@@ -109,6 +110,11 @@ const Benchmark = () => {
                                     System Tier: {report.systemReport.tier.label}
                                 </Typography>
                             </Box>
+
+
+                            <BenchmarkChart userSelection={userSelection} />
+
+
 
                             {/* Compatibility Issues Section */}
                             {!report.systemReport.compatibility.compatible && (
