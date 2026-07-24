@@ -1,6 +1,12 @@
 import { createContext } from "react";
 
 export const context = createContext({
+  page: 1,
+  setPage: () => {},
+  searchItem: "",
+  setSearchItem: () => {},
+  filteredGames: [],
+  setFilteredGames: () => {},
   darkMode: false,
   setDarkMode: () => {},
   specs: {},

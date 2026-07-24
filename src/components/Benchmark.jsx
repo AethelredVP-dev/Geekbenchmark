@@ -1,7 +1,7 @@
-import React, { useEffect, useContext } from 'react';
+import { useEffect, useContext, useState, useMemo } from 'react';
 import { runUltimateBenchmark } from '../benchmark/ultimateBenchamrk';
 import { context } from '../helpers/CONTEXT';
-import { Box, Typography, Alert, Button } from '@mui/material';
+import { Box, Typography, Alert, Button, Autocomplete, TextField, Container } from '@mui/material';
 import { GrGamepad } from "react-icons/gr";
 import gamesDataImport from '../helpers/games.json';
 import { useNavigate, useLocation } from 'react-router-dom';
@@ -11,10 +11,25 @@ import Loader from '../helpers/Loader';
 import { Helmet } from 'react-helmet-async';
 
 const Benchmark = () => {
-    const { gamesData, report, setGamesData, setReport, loading, setLoading } = useContext(context);
+    const {
+        gamesData,
+        report,
+        setGamesData,
+        setReport,
+        loading,
+        setLoading,
+        page,
+        setPage,
+        searchItem,
+        setSearchItem,
+        filteredGames,
+        setFilteredGames
+    } = useContext(context);
+
     const navigate = useNavigate();
     const location = useLocation();
     const userSelection = location.state?.userSelection; // Receiving state from navigation safely
+
 
     useEffect(() => {
         let cancelled = false;
@@ -51,7 +66,17 @@ const Benchmark = () => {
             cancelled = true;
             clearTimeout(timer);
         };
+        console.log(report);
+
     }, [userSelection]);
+    useEffect(() => {
+        if (!report?.gameRankings) {
+            setFilteredGames([]);
+            return;
+        }
+        const filtered = report.gameRankings.filter(game => game.title.toLowerCase().includes(searchItem.toLowerCase()));
+        setFilteredGames(filtered);
+    }, [searchItem, report]);
 
     return (
         <Box sx={{ minHeight: '100vh', width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -65,7 +90,7 @@ const Benchmark = () => {
             ) : (
 
 
-                <Box sx={{ display: 'flex', flexDirection: 'column', alignParagraphs: 'center', alignItems: 'center', p: 4, width: '100%', boxSizing: 'border-box' }}>
+                <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', p: 4, width: '100%', boxSizing: 'border-box' }}>
                     {report?.error && (
                         <Alert severity="info" sx={{ mb: 2 }}>{report.error}</Alert>
                     )}
@@ -109,7 +134,29 @@ const Benchmark = () => {
                             </Typography>
 
                             {/* Game Rankings Responsive Container */}
-                            <PagedGamesList games={report.gameRankings} />
+                            <Container sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
+                                <Autocomplete
+                                    autoComplete
+                                    sx={{ width: '100%', maxWidth: 400, mb: 3, justifyContent: 'center', display: 'flex' }}
+                                    inputValue={searchItem}
+                                    options={report.gameRankings || []}
+                                    onInputChange={(event, newValue) => {
+                                        setSearchItem(newValue || '');
+                                        setPage(1);
+                                    }}
+
+                                    clearOnBlur={false}
+                                    getOptionLabel={option => option?.title || ""}
+                                    renderInput={params =>
+                                        <TextField
+                                            {...params}
+                                            label="Search Games"
+                                        />
+                                    }
+                                />
+                            </Container>
+
+                            <PagedGamesList games={filteredGames} />
                         </Box>
                     )}
                     <Button type='button' variant="contained" color="primary" onClick={() => navigate('/')} sx={{ mt: 3 }}>
