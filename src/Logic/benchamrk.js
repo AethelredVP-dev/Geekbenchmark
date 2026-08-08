@@ -1,11 +1,7 @@
 // helpers/BENCHMARK.js
-// Core scoring + compatibility logic for the PC benchmark tool.
-// Works directly off the `score` field already stored on each item in db.json
-// (cpu, gpu, ram, monitor, motherboard, Disk-Space all use a 0-100 scale).
+// Core scoring + compatibility logic for the PC benchmark tool
+// Now with VRAM detection and storage speed analysis
 
-// ---- 1. Category weights for the overall score ----
-// GPU and CPU dominate real-world "system power", storage/RAM matter less,
-// monitor/motherboard barely move the needle on raw performance.
 const WEIGHTS = {
   cpu: 0.35,
   gpu: 0.4,
@@ -14,9 +10,6 @@ const WEIGHTS = {
   monitor: 0.1,
 };
 
-// ---- 2. Socket / chipset generation extraction (parsed from title text) ----
-// CPU titles look like "... - 12th Gen Desktop" or "... - Zen 4th Gen Desktop"
-// Motherboard titles look like "... (LGA1700 - DDR5)"
 const INTEL_GEN_TO_SOCKET = {
   "1st": "LGA1156",
   "2nd": "LGA1155",
@@ -32,6 +25,7 @@ const INTEL_GEN_TO_SOCKET = {
   "13th": "LGA1700",
   "14th": "LGA1700",
 };
+
 const AMD_GEN_TO_SOCKET = {
   Bulldozer: "AM3+",
   "Zen 1st": "AM4",
@@ -74,8 +68,6 @@ function getMonitorResolution(title = "") {
   return match ? match[1] : "Unknown";
 }
 
-// ---- 3. Compatibility check ----
-// Returns { compatible: boolean, issues: string[] }
 export function checkCompatibility(selection) {
   const issues = [];
 
@@ -110,8 +102,6 @@ export function checkCompatibility(selection) {
   return { compatible: issues.length === 0, issues };
 }
 
-// ---- 4. Bottleneck detection (CPU vs GPU imbalance) ----
-// Returns { hasBottleneck, bottleneckedBy, message }
 export function detectBottleneck(selection) {
   if (!selection.cpu || !selection.gpu) return { hasBottleneck: false };
 
@@ -119,7 +109,6 @@ export function detectBottleneck(selection) {
   const { score: gpuScore } = selection.gpu;
   const ratio = Math.min(cpuScore, gpuScore) / Math.max(cpuScore, gpuScore);
 
-  // Anything below ~0.55 relative parity is a noticeable real-world bottleneck
   if (ratio < 0.55) {
     const bottleneckedBy = cpuScore < gpuScore ? "cpu" : "gpu";
     return {
@@ -134,7 +123,6 @@ export function detectBottleneck(selection) {
   return { hasBottleneck: false };
 }
 
-// ---- 5. Tier labels for the final score ----
 function getTier(score) {
   if (score >= 85) return { label: "Enthusiast", color: "#4CAF50" };
   if (score >= 65) return { label: "High-End", color: "#00BCD4" };
@@ -143,8 +131,6 @@ function getTier(score) {
   return { label: "Budget / Legacy", color: "#F44336" };
 }
 
-// ---- 6. Main entry point ----
-// `selection` = { cpu: {id,title,score}, gpu: {...}, ram: {...}, monitor: {...}, motherboard: {...}, 'Disk-Space': {...} }
 export function runBenchmark(selection) {
   const categories = Object.keys(WEIGHTS);
   const missing = categories.filter((c) => !selection[c]);
@@ -163,7 +149,6 @@ export function runBenchmark(selection) {
   const overallScore = Math.round(
     breakdown.reduce((sum, b) => sum + b.contribution, 0),
   );
-
   const compatibility = checkCompatibility(selection);
   const bottleneck = detectBottleneck(selection);
   const tier = getTier(overallScore);

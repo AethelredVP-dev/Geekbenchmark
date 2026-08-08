@@ -1,6 +1,6 @@
 import { Box, Divider } from "@mui/material"
-import TextType from '../layouts/ui/TextType';
-import ShinyText from './../layouts/ui/ShinyText';
+import TextType from '../assets/ui/TextType';
+import ShinyText from '../assets/ui/ShinyText';
 import { context } from '../helpers/CONTEXT';
 import { useContext } from 'react';
 

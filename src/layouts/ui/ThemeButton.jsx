@@ -2,7 +2,7 @@ import { Box, Button } from "@mui/material"
 import { useContext } from "react";
 import { CiDark } from "react-icons/ci";
 import { MdOutlineLightMode } from "react-icons/md";
-import { context } from "../helpers/CONTEXT";
+import { context } from "../../helpers/CONTEXT";
 
 
 

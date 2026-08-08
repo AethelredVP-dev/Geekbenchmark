@@ -7,10 +7,10 @@ import { CssBaseline, Button, Box, Typography } from '@mui/material';
 
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { context } from './helpers/CONTEXT';
-import Benchmark from './components/Benchmark';
+import BenchmarkContainer from './components/BenchmarkContainer';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import Header from './containers/Header';
-import ThemeButton from './components/ThemeButton';
+import ThemeButton from './layouts/ui/ThemeButton';
 
 function App() {
 
@@ -77,7 +77,7 @@ function App() {
 
             <Routes>
               <Route path='/' element={<Specs />} />
-              <Route path='/benchmark' element={<Benchmark />} />
+              <Route path='/benchmark' element={<BenchmarkContainer />} />
             </Routes>
 
           </Box>

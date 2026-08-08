@@ -19,9 +19,7 @@ const SpecCard = ({
                     {icon}
                     <Typography variant='h5'>{title}</Typography>
                 </Box>
-
                 <Autocomplete
-                    fullWidth
                     options={options || []}
                     getOptionLabel={option => option?.title || ""}
                     value={options?.find(item => item.id === values[name]) || null}
@@ -30,12 +28,24 @@ const SpecCard = ({
                         setFieldTouched(name, true, false);
                     }}
                     onBlur={() => setFieldTouched(name, true)}
+                    slotProps={{
+                        listbox: {
+                            sx: {
+                                maxHeight: '200px',
+                                scrollbarWidth: 'none',
+                                '&::-webkit-scrollbar': {
+                                    display: 'none',
+                                },
+                            },
+                        },
+                    }}
                     renderInput={props => (
                         <TextField
                             {...props}
-                            label="Select your component"
                             error={isError}
-                            helperText={isError && errors[name]}
+                            helperText={isError ? errors[name] : ''}
+                            label={`Select ${title}`}
+                            variant="outlined"
                         />
                     )}
                 />

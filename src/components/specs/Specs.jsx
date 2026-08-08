@@ -9,6 +9,8 @@ import { Container, Button, Box, Grid } from '@mui/material';
 import { context } from '../../helpers/CONTEXT';
 import { useNavigate } from 'react-router-dom';
 import SpecCard from './SpecCards';
+import BudgetPresets from '../Presets';
+import Presets from '../Presets';
 
 const Specs = () => {
     const { specs, setSpecs, setLoading } = useContext(context);
@@ -36,6 +38,7 @@ const Specs = () => {
         };
 
         fetchData(URL);
+
     }, []);
 
     const initialValues = {
@@ -71,7 +74,8 @@ const Specs = () => {
     ];
 
     return (
-        <Container maxWidth="lg" sx={{ py: 4 }}>
+        <Container>
+
             <Formik initialValues={initialValues} onSubmit={handleSubmit} validationSchema={validation}>
                 {({ setFieldValue, setFieldTouched, values, errors: formikErrors, touched: formikTouched }) => (
                     <Form>
@@ -99,6 +103,7 @@ const Specs = () => {
                     </Form>
                 )}
             </Formik>
+            <Presets db={specs} />
         </Container>
     );
 };

@@ -1,21 +1,21 @@
 // components/PagedGamesList.jsx
 import React, { useState, useEffect, useContext } from 'react';
 import { Box, Pagination } from '@mui/material';
-import GameCard from './GamesCard';
-import { context } from '../helpers/CONTEXT';
+import GameCard from '../GamesCard';
+import { context } from '../../helpers/CONTEXT';
 
-const PagedGamesList = ({ games }) => {
+const BenchmarkPagination = () => {
     const itemsPerPage = 6; // Adjust this number based on how many games you want per page
-    const { page, setPage } = useContext(context)
+    const { page, setPage, filteredGames } = useContext(context)
 
 
-    if (!games || games.length === 0) return null;
+    if (!filteredGames || filteredGames.length === 0) return null;
 
     //Slcing and pagination logic(not that impoortant but still)
     const indexOfLastGame = page * itemsPerPage;
     const indexOfFirstGame = indexOfLastGame - itemsPerPage;
-    const currentGames = games.slice(indexOfFirstGame, indexOfLastGame);
-    const totalPages = Math.ceil(games.length / itemsPerPage);
+    const currentGames = filteredGames.slice(indexOfFirstGame, indexOfLastGame);
+    const totalPages = Math.ceil(filteredGames.length / itemsPerPage);
 
     const handlePageChange = (event, value) => {
         setPage(value);
@@ -48,4 +48,4 @@ const PagedGamesList = ({ games }) => {
     );
 };
 
-export default PagedGamesList;
+export default BenchmarkPagination;
