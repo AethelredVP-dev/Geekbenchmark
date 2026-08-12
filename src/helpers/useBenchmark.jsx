@@ -1,21 +1,24 @@
 import { useLocation } from "react-router-dom";
-import { useContext, useEffect } from "react";
-import { context } from "./CONTEXT";
+import { useEffect } from "react";
 import { runUltimateBenchmark } from '../Logic/ultimateBenchamrk';
 import { createSelection } from '../helpers/formattedObject';
+import { useDispatch, useSelector } from "react-redux";
+import { setLoading, setError, setGames, setReport } from "../features/Slices/benchmarkSlice";
 
 export const useBenchmark = () => {
     const location = useLocation();
     const userSelection = location.state?.userSelection;
 
-    const { setGamesData, setReport, setLoading } = useContext(context);
+    const dispatch = useDispatch()
+    const { report, loading, error, games } = useSelector(state => state.benchmark)
 
     useEffect(() => {
         let cancelled = false;
 
         const prepareBenchmark = async () => {
-            setLoading(true);
+
             try {
+                dispatch(setLoading(true));
                 // Fetch the games database from public folder
                 const response = await fetch('/data/games.json');
                 if (!response.ok) {
@@ -23,22 +26,21 @@ export const useBenchmark = () => {
                 }
                 const fetchedGames = await response.json();
 
-                // Store in context so other components can use it
                 if (!cancelled) {
-                    setGamesData(fetchedGames);
+                    dispatch(setGames(fetchedGames))
                 }
 
                 const formattedSelection = createSelection(userSelection);
                 const finalResult = runUltimateBenchmark(formattedSelection, fetchedGames);
 
-                if (!cancelled) setReport(finalResult);
+                if (!cancelled) dispatch(setReport(finalResult));
             } catch (err) {
                 console.error('Benchmark failed:', err);
                 if (!cancelled) {
-                    setReport({ error: 'Failed to load games data. Please refresh the page.' });
+                    dispatch(setReport({ error: 'Failed to load games data. Please refresh the page.' }));
                 }
             } finally {
-                if (!cancelled) setLoading(false);
+                if (!cancelled) dispatch(setLoading(false));
             }
         };
 
@@ -47,7 +49,7 @@ export const useBenchmark = () => {
         return () => {
             cancelled = true;
         };
-    }, [userSelection, setGamesData, setReport, setLoading]);
+    }, [userSelection]);
 
     return { userSelection };
 };

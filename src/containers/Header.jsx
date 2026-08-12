@@ -1,11 +1,10 @@
 import { Box, Divider } from "@mui/material"
 import TextType from '../assets/ui/TextType';
 import ShinyText from '../assets/ui/ShinyText';
-import { context } from '../helpers/CONTEXT';
-import { useContext } from 'react';
+import { useSelector } from "react-redux";
 
 const Header = () => {
-    const { darkMode } = useContext(context);
+    const { darkMode } = useSelector(state => state.benchmark);
     return (
         <>
             <Box sx={{ fontSize: "2rem", textAlign: "center", mb: 4 }}>

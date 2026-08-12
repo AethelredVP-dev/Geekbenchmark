@@ -1,10 +1,10 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell, CartesianGrid } from 'recharts';
-import { context } from '../helpers/CONTEXT';
 import { Box, Typography, Paper, useTheme } from '@mui/material';
+import { useSelector } from 'react-redux';
 
 const BenchmarkChart = ({ userSelection }) => {
-    const { report } = useContext(context);
+    const { report } = useSelector((state) => state.benchmark);
     const theme = useTheme();
 
     // Extract selected hardware specs safely

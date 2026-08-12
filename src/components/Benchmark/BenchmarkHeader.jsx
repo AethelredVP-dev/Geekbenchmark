@@ -1,11 +1,11 @@
 import { Alert, Box, Typography } from '@mui/material';
 import { useContext } from 'react';
-import { context } from '../../helpers/CONTEXT';
 import { GrGamepad } from 'react-icons/gr';
+import { useSelector } from 'react-redux';
 
 
 const BenchmarkHeader = ({ price }) => {
-    const { report } = useContext(context)
+    const { report } = useSelector(state => state.benchmark);
     return (
         <>
             <Box sx={{ bgcolor: 'background.default', color: "text.primary", p: 3, borderRadius: 2, mb: 2, textAlign: 'center' }}>

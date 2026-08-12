@@ -1,5 +1,4 @@
-import { useContext, useEffect, useMemo } from 'react';
-import { context } from '../helpers/CONTEXT';
+import { useEffect, useMemo } from 'react';
 import { Box, Typography, Alert } from '@mui/material';
 import Loader from '../helpers/Loader';
 import { Helmet } from 'react-helmet-async';
@@ -7,17 +6,15 @@ import { Footer, Header, Pagination, Rankings } from "./Benchmark"
 import BenchmarkChart from "../Logic/BenchamrkChart"
 import { createSelection } from '../helpers/formattedObject';
 import { useBenchmark } from '../helpers/useBenchmark';
+import { useDispatch, useSelector } from 'react-redux';
+import { setFilteredGames } from '../features/Slices/benchmarkSlice';
+
 
 const BenchmarkContainer = () => {
-    const {
-        report,
-        setGamesData,
-        setReport,
-        loading,
-        setLoading,
-        searchItem,
-        setFilteredGames
-    } = useContext(context);
+
+
+    const { searchItem, report, loading, error } = useSelector(state => state.benchmark);
+    const dispatch = useDispatch();
 
     const { userSelection } = useBenchmark();
     const totalPrice = Object.values(userSelection).reduce(
@@ -32,7 +29,7 @@ const BenchmarkContainer = () => {
         );
     }, [report?.gameRankings, searchItem]);
     useEffect(() => {
-        setFilteredGames(filteredGames);
+        dispatch(setFilteredGames(filteredGames));
     }, [filteredGames, setFilteredGames]);
 
     return (

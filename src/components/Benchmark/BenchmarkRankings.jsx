@@ -1,9 +1,10 @@
 import { Autocomplete, Container, TextField } from "@mui/material";
-import { useContext } from "react";
-import { context } from "../../helpers/CONTEXT";
+import { useDispatch, useSelector } from "react-redux";
+import { setPage, setSearchItem } from "../../features/Slices/benchmarkSlice";
 
 const BenchmarkRankings = () => {
-    const { searchItem, setSearchItem, report, setPage, filteredGames } = useContext(context)
+    const dispatch = useDispatch()
+    const { report, searchItem, filteredGames } = useSelector(state => state.benchmark)
     return (
         <Container sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
             <Autocomplete
@@ -12,8 +13,8 @@ const BenchmarkRankings = () => {
                 inputValue={searchItem}
                 options={report.gameRankings || []}
                 onInputChange={(event, newValue) => {
-                    setSearchItem(newValue || '');
-                    setPage(1);
+                    dispatch(setSearchItem(newValue || ''));
+                    dispatch(setPage(1));
                 }}
 
                 clearOnBlur={false}

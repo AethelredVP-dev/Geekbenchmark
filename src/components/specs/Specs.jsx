@@ -1,19 +1,22 @@
 import axios from 'axios';
-import React, { useContext, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { LuCpu, LuMonitor, LuCircuitBoard, LuHardDrive } from "react-icons/lu";
 import { FaMemory } from "react-icons/fa6";
 import { BsPciCard } from "react-icons/bs";
 import { validation } from '../../helpers/VALIDATION';
 import { Formik, Form } from 'formik';
 import { Container, Button, Box, Grid } from '@mui/material';
-import { context } from '../../helpers/CONTEXT';
 import { useNavigate } from 'react-router-dom';
 import SpecCard from './SpecCards';
 import BudgetPresets from '../Presets';
 import Presets from '../Presets';
+import { useDispatch, useSelector } from 'react-redux';
+import { setSpecs, setLoading } from '../../features/Slices/benchmarkSlice';
+
 
 const Specs = () => {
-    const { specs, setSpecs, setLoading } = useContext(context);
+    const { specs } = useSelector(state => state.benchmark);
+    const dispatch = useDispatch();
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -23,17 +26,17 @@ const Specs = () => {
             try {
                 const { data, status } = await axios.get(url);
                 if (status === 200) {
-                    setSpecs({
+                    dispatch(setSpecs({
                         cpu: data.cpu || [],
                         gpu: data.gpu || [],
                         ram: data.ram || [],
                         monitor: data.monitor || [],
                         motherboard: data.motherboard || [],
                         'Disk-Space': data['Disk-Space'] || []
-                    });
+                    }))
                 }
             } catch (err) {
-                console.log("Error fetching data:", err);
+                console.error("Error fetching data:", err);
             }
         };
 
@@ -60,7 +63,7 @@ const Specs = () => {
             'Disk-Space': specs['Disk-Space']?.find(item => item.id === values['Disk-Space']) || null,
         };
 
-        setLoading(true);
+        dispatch(setLoading(true));
         navigate("/benchmark", { state: { userSelection } });
     };
 

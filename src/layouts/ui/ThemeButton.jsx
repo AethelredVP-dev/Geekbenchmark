@@ -1,20 +1,22 @@
 import { Box, Button } from "@mui/material"
-import { useContext } from "react";
 import { CiDark } from "react-icons/ci";
 import { MdOutlineLightMode } from "react-icons/md";
-import { context } from "../../helpers/CONTEXT";
+import { useDispatch, useSelector } from "react-redux";
+import { setDarkMode } from "../../features/Slices/benchmarkSlice";
+
 
 
 
 const ThemeButton = () => {
-    const { darkMode, setDarkMode } = useContext(context);
+    const { darkMode } = useSelector(state => state.benchmark);
+    const dispatch = useDispatch();
     return (
 
         <Box sx={{ display: 'flex', justifyContent: 'flex-end', mb: 3 }}>
             <Button
                 variant="outlined"
                 color="primary"
-                onClick={() => setDarkMode(!darkMode)}
+                onClick={() => dispatch(setDarkMode(!darkMode))}
                 sx={{ minWidth: '48px', height: '48px' }}
             >
                 {darkMode ? <MdOutlineLightMode size={20} /> : <CiDark size={20} />}

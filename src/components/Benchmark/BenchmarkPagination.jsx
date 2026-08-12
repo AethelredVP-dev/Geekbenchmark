@@ -1,12 +1,14 @@
 // components/PagedGamesList.jsx
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Box, Pagination } from '@mui/material';
 import GameCard from '../GamesCard';
-import { context } from '../../helpers/CONTEXT';
+import { useDispatch, useSelector } from 'react-redux';
+import { setPage } from '../../features/Slices/benchmarkSlice';
 
 const BenchmarkPagination = () => {
     const itemsPerPage = 6; // Adjust this number based on how many games you want per page
-    const { page, setPage, filteredGames } = useContext(context)
+    const { page, filteredGames } = useSelector(state => state.benchmark);
+    const dispatch = useDispatch()
 
 
     if (!filteredGames || filteredGames.length === 0) return null;
@@ -18,7 +20,7 @@ const BenchmarkPagination = () => {
     const totalPages = Math.ceil(filteredGames.length / itemsPerPage);
 
     const handlePageChange = (event, value) => {
-        setPage(value);
+        dispatch(setPage(value));
     };
 
     return (
